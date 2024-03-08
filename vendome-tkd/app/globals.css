@@ -19,6 +19,14 @@
   --dark-darkest-variation-title: ;
   --dark-dark-variation-text: ;
   --dark-medium-variation-nondeco-border: ; */
+
+  --14px: 0.875rem;
+  --16px: 1rem;
+  --18px: 1.125rem;
+  --20px: 1.25rem;
+  --22px: calc(22rem / 16);
+  --24px: calc(24rem / 16);
+  --32px: 2rem;
 }
 
 /***** FONTS *****/
@@ -113,6 +121,10 @@
 * {
   padding: 0;
   margin: 0;
+}
+
+html {
+  padding: var(--24px);
 }
 
 html,
