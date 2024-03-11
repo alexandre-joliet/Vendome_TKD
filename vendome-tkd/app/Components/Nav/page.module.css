@@ -1,0 +1,39 @@
+.nav_container {
+  background-color: white;
+  box-shadow: 2px 2px 20px 1px rgba(212, 212, 212, 0.5);
+  padding: var(--24px);
+  max-width: 80%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header_closenavicon {
+  transition: all ease-in-out 500ms;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 1.5rem;
+}
+
+.header_closenavicon:hover {
+  cursor: pointer;
+  transform: rotate3d(0, 0, 1, -90deg);
+}
+
+.nav_title,
+.nav_list {
+  color: var(--light-darkest-variation-title);
+}
+
+.nav_title {
+  border-bottom: 1px solid var(--light-light-variation-deco-border);
+  font-size: var(--20px);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav_list {
+  list-style: none;
+  line-height: 2.5rem;
+}

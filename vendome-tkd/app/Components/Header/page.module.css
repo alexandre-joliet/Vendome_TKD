@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: var(--24px);
+}
+
+.header_logo {
+  width: 48px;
+}
+
+.header_opennavicon {
+  transition: all ease-in-out 500ms;
+  width: 38px;
+  height: 38px;
+}
+
+.header_opennavicon:hover {
+  cursor: pointer;
+  transform: rotate3d(0, 0, 1, 90deg);
+}
