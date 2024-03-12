@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./page.module.css";
 
 type Props = {
@@ -26,29 +27,29 @@ const NavBurger = ({ menuIsOpen, onClickMenu }: Props) => {
       <nav className={styles.nav}>
         <ul className={styles.nav_list}>
           <li>
-            <a href="/le-club" className={styles.nav_items}>
+            <Link href="/le-club" className={styles.nav_items}>
               Découvrir le club
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/infos" className={styles.nav_items}>
+            <Link href="/infos" className={styles.nav_items}>
               Informations pratiques
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/le-taekwondo" className={styles.nav_items}>
+            <Link href="/le-taekwondo" className={styles.nav_items}>
               Découvrir le Taekwondo
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/lexique-poomsaes" className={styles.nav_items}>
+            <Link href="/lexique-poomsaes" className={styles.nav_items}>
               Lexique
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/contact" className={styles.nav_items}>
+            <Link href="/contact" className={styles.nav_items}>
               Nous contacter
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
