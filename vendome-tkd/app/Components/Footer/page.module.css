@@ -1,0 +1,18 @@
+.footer {
+  background-color: var(--light-darkest-variation-title);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--32px) var(--24px) var(--32px) var(--24px);
+}
+
+.infos_title {
+  font-size: var(--18px);
+  font-weight: 700;
+  margin-bottom: var(--16px);
+}
+
+.social_fb {
+  width: 48px;
+}
