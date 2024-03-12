@@ -4,7 +4,15 @@ import styles from "./page.module.css";
 import NavBurger from "../Nav/NavBurger";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
+
+  const handleOpenMenu = () => {
+    if (menuIsOpen === false) {
+      setMenuIsOpen(true);
+    } else {
+      setMenuIsOpen(false);
+    }
+  };
 
   return (
     <>
@@ -13,6 +21,7 @@ const Header = () => {
           className={styles.header_opennavicon}
           src="/icons/menu_light_48dp.svg"
           alt="Ouvrir le menu"
+          onClick={handleOpenMenu}
         ></img>
         <img
           className={styles.header_logo}
@@ -20,7 +29,7 @@ const Header = () => {
           alt="Logo du club"
         ></img>
       </header>
-      <NavBurger></NavBurger>
+      <NavBurger menuIsOpen={menuIsOpen} onClickMenu={setMenuIsOpen} />
     </>
   );
 };
