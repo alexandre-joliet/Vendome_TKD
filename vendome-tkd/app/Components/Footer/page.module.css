@@ -13,6 +13,11 @@
   margin-bottom: var(--16px);
 }
 
+.infos_title,
+.infos_address {
+  color: white;
+}
+
 .social_fb {
   width: 48px;
 }
