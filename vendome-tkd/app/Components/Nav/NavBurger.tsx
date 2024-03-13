@@ -27,6 +27,11 @@ const NavBurger = ({ menuIsOpen, onClickMenu }: Props) => {
       <nav className={styles.nav}>
         <ul className={styles.nav_list}>
           <li>
+            <Link href="/" className={styles.nav_items}>
+              Accueil
+            </Link>
+          </li>
+          <li>
             <Link href="/le-club" className={styles.nav_items}>
               Découvrir le club
             </Link>
