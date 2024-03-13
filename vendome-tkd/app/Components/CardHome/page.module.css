@@ -1,0 +1,29 @@
+.card_container {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-default);
+  display: flex;
+  flex-direction: column;
+  margin: 0 var(--24px) 3rem var(--24px);
+  text-align: center;
+  transition: all 300ms ease-in-out;
+}
+
+.card_container:hover {
+  scale: 1.01;
+}
+
+.card_image {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  height: 10rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card_title {
+  color: var(--light-darkest-variation-title);
+  font-size: var(--20px);
+  font-weight: 700;
+  padding: var(--20px);
+  text-decoration: none;
+}
