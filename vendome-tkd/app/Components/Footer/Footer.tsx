@@ -11,6 +11,7 @@ const Footer = () => {
       </div>
       <a
         href="https://www.facebook.com/groups/2491193871168095?locale=fr_FR"
+        target="_blank"
         className={styles.footer_social}
       >
         <img
