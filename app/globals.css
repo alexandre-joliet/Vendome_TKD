@@ -1,11 +1,7 @@
 :root {
   /* --max-width: 1100px; */
 
-  --border-radius: 12px;
-
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --border-radius: 10px;
 
   /***** COLORS *****/
   --background-light: #ffffff;
@@ -13,12 +9,14 @@
   --light-darkest-variation-title: #141a33;
   --light-dark-variation-text: #505673;
   --light-medium-variation-nondeco-border: #878ca8;
+  --light-light-variation-deco-border: #dadef2;
 
   /* --background-dark: ;
   --dark-primary-color: ;
   --dark-darkest-variation-title: ;
   --dark-dark-variation-text: ;
-  --dark-medium-variation-nondeco-border: ; */
+  --dark-medium-variation-nondeco-border: ;
+  --dark-light-variation-deco-border: ; */
 
   --14px: 0.875rem;
   --16px: 1rem;
@@ -27,6 +25,9 @@
   --22px: calc(22rem / 16);
   --24px: calc(24rem / 16);
   --32px: 2rem;
+
+  --box-shadow-default: 2px 2px 20px 1px rgba(212, 212, 212, 0.5);
+  --box-shadow-menu: 2px 2px 20px 1px rgba(212, 212, 212, 0.5);
 }
 
 /***** FONTS *****/
@@ -121,10 +122,9 @@
 * {
   padding: 0;
   margin: 0;
-}
-
-html {
-  padding: var(--24px);
+  font-family: "Lato", ui-monospace, Menlo, Monaco, "Cascadia Mono",
+    "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace",
+    "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 }
 
 html,
@@ -159,6 +159,11 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  color: var(--light-darkest-variation-title);
+}
+
+p {
+  color: var(--light-dark-variation-text);
 }
 
 a {

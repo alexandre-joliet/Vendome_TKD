@@ -1,0 +1,22 @@
+.main_title,
+.intro_article {
+  padding: 0 var(--24px) 0 var(--24px);
+}
+
+.main_image {
+  margin-bottom: var(--16px);
+}
+
+.main_title {
+  font-size: var(--24px);
+  margin-bottom: var(--16px);
+}
+
+.intro_article {
+  margin-bottom: 3rem;
+}
+
+.intro_text {
+  line-height: 1.75;
+  margin-bottom: var(--16px);
+}

@@ -1,0 +1,71 @@
+.main_image,
+.section_title,
+.section_text {
+  margin-bottom: var(--16px);
+}
+
+.main_article {
+  padding: 0 var(--24px) 0 var(--24px);
+}
+
+.main_title {
+  font-size: var(--24px);
+  margin-bottom: var(--16px);
+}
+
+.article_section {
+  line-height: 1.75;
+  margin-bottom: 3rem;
+}
+
+.section_title {
+  font-size: var(--20px);
+}
+
+.table_hours,
+.table_price {
+  border: 1px solid var(--light-light-variation-deco-border);
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+
+.table_head {
+  background-color: var(--light-darkest-variation-title);
+  border: 1px solid var(--light-darkest-variation-title);
+  color: white;
+}
+
+.table_hours td,
+.table_price td {
+  border: 1px solid var(--light-light-variation-deco-border);
+  color: var(--light-dark-variation-text);
+}
+
+.table_price {
+  margin-bottom: var(--24px);
+}
+
+.section_equipment {
+  font-size: var(--18px);
+}
+
+.equipment_text {
+  margin-bottom: var(--16px);
+  padding-left: 1.65rem;
+}
+
+.location_text,
+.location_address {
+  margin-bottom: var(--16px);
+}
+
+.location_address {
+  font-size: var(--16px);
+  font-weight: 700;
+  text-align: center;
+}
+
+.map_iframe {
+  margin-top: var(--16px);
+}
