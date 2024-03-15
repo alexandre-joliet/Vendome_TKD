@@ -4,22 +4,39 @@
   margin-bottom: var(--16px);
 }
 
+.main_header {
+  background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.8)),
+    url("../../public/images/VendômeCover.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: var(--16px);
+  height: 15rem;
+  position: relative;
+}
+
+.main_title {
+  color: white;
+  font-size: var(--32px);
+  font-weight: 900;
+  text-shadow: 2px 2px 20px rgb(20, 26, 51, 0.3);
+  margin-bottom: var(--16px);
+  padding: 0 var(--24px) 0 var(--24px);
+  position: absolute;
+  bottom: 0;
+}
+
 .main_article {
   padding: 0 var(--24px) 0 var(--24px);
 }
 
-.main_title {
-  font-size: var(--24px);
-  margin-bottom: var(--16px);
-}
-
 .article_section {
   line-height: 1.75;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .section_title {
   font-size: var(--20px);
+  font-weight: 900;
 }
 
 .section_image {
