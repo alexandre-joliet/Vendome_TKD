@@ -7,14 +7,11 @@ const LeClub = () => {
     <>
       <Header />
       <main className={styles.main}>
-        <img
-          src="/images/VendômeCover.jpg"
-          alt="Photo de couverture présentant une vue des toits et des clochers de la ville de Vendôme"
-          className={styles.main_image}
-        ></img>
+        <section className={styles.main_header}>
+          <h1 className={styles.main_title}>Notre club</h1>
+        </section>
         <article className={styles.main_article}>
           <section className={styles.article_section}>
-            <h1 className={styles.main_title}>Notre Club</h1>
             <p className={styles.section_text}>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
               provident vitae ducimus ipsam est molestias, voluptates, illum
