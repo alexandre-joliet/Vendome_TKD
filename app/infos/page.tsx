@@ -12,88 +12,91 @@ const Infos = () => {
     <>
       <Header />
       <main className={styles.main}>
-        <img
-          src="/images/VendômeCover.jpg"
-          alt="Photo de couverture présentant une vue des toits et des clochers de la ville de Vendôme"
-          className={styles.main_image}
-        ></img>
+        <section className={styles.main_header}>
+          <h1 className={styles.main_title}>Informations pratiques</h1>
+        </section>
         <article className={styles.main_article}>
           <section className={styles.article_section}>
-            <h1 className={styles.main_title}>Informations pratiques</h1>
             <p className={styles.section_text}>
               Vous trouverez ci-dessous toutes les informations concernant les
-              horaires d'entraînement ainsi que les tarifs pour la saison{" "}
-              <b>2023/2024</b>.
+              horaires d'entraînement, les tarifs pour la saison{" "}
+              <b>2023/2024</b> et l'adresse de notre Dojang.
             </p>
           </section>
 
           <section className={styles.article_section}>
-            <h2 className={styles.section_title}>Horaires des entraînements</h2>
+            <h2 className={styles.section_title}>
+              <img
+                src="/icons/schedule_black_24dp.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              Horaires des entraînements
+            </h2>
+            <p className={styles.section_text}>
+              Les entrainements ont lieu tous les <b>Mardis et Jeudis</b> aux
+              horaires suivantes :
+            </p>
             <table className={styles.table_hours}>
-              <thead className={styles.table_head}>
-                <tr>
-                  <th>Cours</th>
-                  <th>Jours</th>
-                  <th>Horaires</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
                   <td>Enfants (-13 ans)</td>
-                  <td>Mardis et Jeudis</td>
-                  <td>18h - 19h</td>
+                  <td className={styles.hours}>18h - 19h</td>
                 </tr>
                 <tr>
                   <td>Adolescents & Adultes</td>
-                  <td>Mardis et Jeudis</td>
-                  <td>19h05 - 20h30</td>
+                  <td className={styles.hours}>19h05 - 20h30</td>
                 </tr>
               </tbody>
             </table>
+            <h4 className={styles.section_note}>
+              &#128161; Vacances scolaires :
+            </h4>
+            <p className={styles.note_text}>
+              Sauf mention contraire du professeur, aucun cours n'a lieu durant
+              les vacances scolaires.
+            </p>
           </section>
 
           <section className={styles.article_section}>
-            <h2 className={styles.section_title}>Tarifs</h2>
+            <h2 className={styles.section_title}>
+              <img src="/icons/euro_black_24dp.svg" alt="" aria-hidden="true" />
+              Tarifs
+            </h2>
             <table className={styles.table_price}>
-              <thead className={styles.table_head}>
-                <tr>
-                  <th>Catégories</th>
-                  <th>Tarifs</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
-                  <td>Enfants (-13 ans)</td>
-                  <td>120€</td>
+                  <td className={styles.table_row}>Enfants (-13 ans)</td>
+                  <td className={styles.price}>120€</td>
                 </tr>
                 <tr>
                   <td>Adolescents (13-17 ans)</td>
-                  <td>130€</td>
+                  <td className={styles.price}>130€</td>
                 </tr>
                 <tr>
                   <td>Adultes</td>
-                  <td>150€</td>
+                  <td className={styles.price}>150€</td>
                 </tr>
                 <tr>
-                  <td>License (obligatoire)</td>
-                  <td>35€</td>
+                  <td>Licence (obligatoire)</td>
+                  <td className={styles.price}>35€</td>
                 </tr>
                 <tr>
                   <td>Passeport (achat unique)</td>
-                  <td>20€</td>
+                  <td className={styles.price}>20€</td>
                 </tr>
               </tbody>
             </table>
-            <h4 className={styles.section_equipment}>
+            <h4 className={styles.section_note}>
               &#128161; Note sur l'équipement :
             </h4>
-            <p className={styles.equipment_text}>
+            <p className={styles.note_text}>
               L'achat de Dobok (tenue traditionnelle) ou d'équipements de
               protection n'est pas nécessaire pour débuter la pratique du
               Taekwnondo. <b>Une tenue de sport</b> appropriée suffit !
             </p>
 
-            <p className={styles.equipment_text}>
+            <p className={styles.note_text}>
               De plus, nous organisons en début de saison également des
               commandes groupées avec notre fournisseur pour équiper ceux qui le
               souhaitent tout en bénéficiant de réductions.
@@ -101,7 +104,14 @@ const Infos = () => {
           </section>
 
           <section className={styles.article_section}>
-            <h2 className={styles.section_title}>Nous trouver</h2>
+            <h2 className={styles.section_title}>
+              <img
+                src="/icons/location_on_black_24dp.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              Nous trouver
+            </h2>
             <p className={styles.location_text}>
               Tous les entrainements ont lieu au{" "}
               <b>Complexe Sportif d'Arts Martiaux</b> de Vendôme situé au :
