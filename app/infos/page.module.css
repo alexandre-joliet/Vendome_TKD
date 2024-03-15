@@ -1,56 +1,87 @@
-.main_image,
 .section_title,
 .section_text {
   margin-bottom: var(--16px);
+}
+
+.main_header {
+  background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.8)),
+    url("../../public/images/infos.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: var(--16px);
+  height: 15rem;
+  position: relative;
+}
+
+.main_title {
+  color: white;
+  font-size: var(--32px);
+  font-weight: 900;
+  text-shadow: 2px 2px 20px rgb(20, 26, 51, 0.3);
+  margin-bottom: var(--16px);
+  padding: 0 var(--24px) 0 var(--24px);
+  position: absolute;
+  bottom: 0;
 }
 
 .main_article {
   padding: 0 var(--24px) 0 var(--24px);
 }
 
-.main_title {
-  font-size: var(--24px);
-  margin-bottom: var(--16px);
-}
-
 .article_section {
   line-height: 1.75;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .section_title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   font-size: var(--20px);
+  font-weight: 900;
+}
+
+.section_title img {
+  background-color: var(--light-light-variation-deco-border);
+  border-radius: 100%;
+  padding: 0.25rem;
+  /* display: none; */
 }
 
 .table_hours,
 .table_price {
-  border: 1px solid var(--light-light-variation-deco-border);
   border-collapse: collapse;
-  text-align: center;
-  width: 100%;
+  margin: auto;
+  width: 98%;
 }
 
-.table_head {
-  background-color: var(--light-darkest-variation-title);
-  border: 1px solid var(--light-darkest-variation-title);
-  color: white;
+.table_hours tr:not(:last-child),
+.table_price tr:not(:last-child) {
+  border-bottom: 1px solid var(--light-light-variation-deco-border);
 }
 
 .table_hours td,
 .table_price td {
-  border: 1px solid var(--light-light-variation-deco-border);
   color: var(--light-dark-variation-text);
+  padding: 0.5rem 0;
 }
 
+.table_hours,
 .table_price {
-  margin-bottom: var(--24px);
+  margin-bottom: var(--32px);
 }
 
-.section_equipment {
+.hours,
+.price {
+  text-align: right;
+  font-weight: 700;
+}
+
+.section_note {
   font-size: var(--18px);
 }
 
-.equipment_text {
+.note_text {
   margin-bottom: var(--16px);
   padding-left: 1.65rem;
 }
