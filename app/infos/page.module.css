@@ -24,12 +24,13 @@
   bottom: 0;
 }
 
-.main_article {
+.article_section {
+  line-height: 1.75;
+  margin-bottom: 3rem;
   padding: 0 var(--24px) 0 var(--24px);
 }
 
-.article_section {
-  line-height: 1.75;
+.article_section:not(:last-child) {
   margin-bottom: 4rem;
 }
 
@@ -48,34 +49,92 @@
   /* display: none; */
 }
 
-.table_hours,
+/***** INFO CARDS *****/
+.card_carrousel {
+  display: flex;
+  gap: var(--24px);
+  overflow: hidden;
+}
+
+.card_container {
+  border-radius: var(--border-radius);
+  box-shadow: 2px 2px 20px 1px rgb(200, 200, 200, 0.8);
+  flex-shrink: 0;
+  flex-basis: 100%;
+  margin-bottom: var(--24px);
+  padding: var(--24px);
+}
+
+.children {
+  background-color: var(--children-card-bg);
+}
+
+.teens {
+  background-color: var(--teens-card-bg);
+}
+
+.adults {
+  background-color: var(--adults-card-bg);
+}
+
+.card_info,
+.info_hours {
+  border-bottom: 1px solid white;
+  padding-bottom: var(--24px);
+  margin-bottom: var(--24px);
+}
+
+.info_title,
+.info_price,
+.info_hours {
+  color: white;
+}
+
+.info_title {
+  font-weight: 400;
+  margin-bottom: var(--24px);
+}
+
+.price {
+  font-size: var(--32px);
+  /* font-weight: 700; */
+  margin-right: 1rem;
+}
+
+.info_hours {
+  display: flex;
+  gap: var(--16px);
+}
+
 .table_price {
   border-collapse: collapse;
-  margin: auto;
-  width: 98%;
-}
-
-.table_hours tr:not(:last-child),
-.table_price tr:not(:last-child) {
-  border-bottom: 1px solid var(--light-light-variation-deco-border);
-}
-
-.table_hours td,
-.table_price td {
-  color: var(--light-dark-variation-text);
-  padding: 0.5rem 0;
-}
-
-.table_hours,
-.table_price {
   margin-bottom: var(--32px);
 }
 
-.hours,
-.price {
+.table_price td {
+  color: white;
+  padding: 0.5rem 0;
+}
+
+.table_price span {
+  margin-right: 12px;
+}
+
+.extra_price {
   text-align: right;
+  font-size: var(--18px);
   font-weight: 700;
 }
+
+.card_free {
+  background-color: var(--light-light-variation-deco-border);
+  border-radius: var(--border-radius);
+  margin: 1rem;
+  padding: var(--16px);
+  text-align: center;
+}
+
+/* --- */
 
 .section_note {
   font-size: var(--18px);
@@ -99,4 +158,11 @@
 
 .map_iframe {
   margin-top: var(--16px);
+}
+
+.bg_wrapper {
+  background: url("../../public/images/bg-mobile.svg") center no-repeat;
+  background-size: cover;
+  padding-top: 3.5rem;
+  padding-bottom: 2px;
 }
