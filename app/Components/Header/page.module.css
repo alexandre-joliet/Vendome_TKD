@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--24px);
+  padding: var(--10px) var(--24px);
 }
 
 .header_logo {
