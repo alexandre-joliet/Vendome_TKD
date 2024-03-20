@@ -9,14 +9,11 @@ const Home = () => {
     <>
       <Header />
       <main className={styles.main}>
-        <img
-          src="/images/VendômeCover.jpg"
-          alt="Photo de couverture présentant une vue des toits et des clochers de la ville de Vendôme"
-          className={styles.main_image}
-        ></img>
-        <h1 className={styles.main_title}>
-          Bienvenue au Taekwondo Club de Vendôme !
-        </h1>
+        <section className={styles.main_header}>
+          <h1 className={styles.main_title}>
+            Bienvenue au Taekwondo Club de Vendôme !
+          </h1>
+        </section>
         <article className={styles.intro_article}>
           <p className={styles.intro_text}>
             Niché au cœur de la ville de Vendôme, dans le département du
@@ -50,46 +47,48 @@ const Home = () => {
           <p className={styles.intro_text}>A bientôt &#129355; !</p>
         </article>
 
-        <CardHome
-          CardProps={{
-            image: "/images/VendômeCover.jpg",
-            alt: "alt",
-            title: "Découvrir le club",
-            url: "/le-club",
-          }}
-        />
-        <CardHome
-          CardProps={{
-            image: "/images/VendômeCover.jpg",
-            alt: "alt",
-            title: "Informations pratiques",
-            url: "/infos",
-          }}
-        />
-        <CardHome
-          CardProps={{
-            image: "/images/tkd.jpg",
-            alt: "alt",
-            title: "Découvrir le Taekwondo",
-            url: "/le-teakwondo",
-          }}
-        />
-        <CardHome
-          CardProps={{
-            image: "/images/lexique.jpg",
-            alt: "alt",
-            title: "Lexique",
-            url: "/lexique-poomsaes",
-          }}
-        />
-        <CardHome
-          CardProps={{
-            image: "/images/contact.jpg",
-            alt: "alt",
-            title: "Nous contacter",
-            url: "/contact",
-          }}
-        />
+        <div className={styles.bg_wrapper}>
+          <CardHome
+            CardProps={{
+              image: "/images/VendômeCover.jpg",
+              alt: "alt",
+              title: "Découvrir le club",
+              url: "/le-club",
+            }}
+          />
+          <CardHome
+            CardProps={{
+              image: "/images/infos.jpg",
+              alt: "alt",
+              title: "Informations pratiques",
+              url: "/infos",
+            }}
+          />
+          <CardHome
+            CardProps={{
+              image: "/images/tkd.jpg",
+              alt: "alt",
+              title: "Découvrir le Taekwondo",
+              url: "/le-teakwondo",
+            }}
+          />
+          <CardHome
+            CardProps={{
+              image: "/images/lexique.jpg",
+              alt: "alt",
+              title: "Lexique",
+              url: "/lexique-poomsaes",
+            }}
+          />
+          <CardHome
+            CardProps={{
+              image: "/images/contact.jpg",
+              alt: "alt",
+              title: "Nous contacter",
+              url: "/contact",
+            }}
+          />
+        </div>
       </main>
       <Footer />
     </>
