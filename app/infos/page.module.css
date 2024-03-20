@@ -50,15 +50,17 @@
 }
 
 /***** INFO CARDS *****/
-.card_carrousel {
-  display: flex;
-  gap: var(--24px);
-  overflow: hidden;
+.card_free {
+  color: green;
+  font-size: var(--18px);
+  font-weight: 700;
+  margin: 1rem;
+  text-align: center;
 }
 
 .card_container {
   border-radius: var(--border-radius);
-  box-shadow: 2px 2px 20px 1px rgb(200, 200, 200, 0.8);
+  box-shadow: 2px 2px 20px 1px rgba(20, 26, 51, 0.3);
   flex-shrink: 0;
   flex-basis: 100%;
   margin-bottom: var(--24px);
@@ -109,6 +111,7 @@
 .table_price {
   border-collapse: collapse;
   margin-bottom: var(--32px);
+  width: 100%;
 }
 
 .table_price td {
@@ -124,14 +127,6 @@
   text-align: right;
   font-size: var(--18px);
   font-weight: 700;
-}
-
-.card_free {
-  background-color: var(--light-light-variation-deco-border);
-  border-radius: var(--border-radius);
-  margin: 1rem;
-  padding: var(--16px);
-  text-align: center;
 }
 
 /* --- */
