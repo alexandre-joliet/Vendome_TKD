@@ -1,0 +1,104 @@
+.section_poomsae {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-basic);
+  margin: var(--16px) 0;
+  overflow: hidden;
+  transition: all ease-in-out 300ms;
+}
+
+.name_container {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all ease-in-out 300ms;
+}
+
+.bg_poomsaeyellow {
+  background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.4)),
+    url("../../../public/images/belts/CJaune.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg_poomsaeblue {
+  background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.4)),
+    url("../../../public/images/belts/CBleu.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg_poomsaered {
+  background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.4)),
+    url("../../../public/images/belts/CRouge.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.poomsae_name {
+  color: white;
+}
+
+.poomsae_name,
+.poomsae_description,
+.poomsae_list,
+.poomsae_ressources {
+  padding: var(--12px) var(--16px);
+}
+
+.poomsae_name {
+  font-size: var(--18px);
+}
+
+.expand_toggler {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-right: var(--16px);
+}
+
+.content_container {
+  max-height: 0px;
+  transition: all ease-in-out 500ms;
+}
+
+.expanded {
+  display: flex;
+  flex-direction: column;
+  max-height: 100rem;
+}
+
+.content_container img {
+  padding: var(--16px);
+  margin-bottom: var(--16px);
+}
+
+.poomsae_ressources {
+  border-top: 1px solid var(--light-light-variation-deco-border);
+  font-size: var(--16px);
+}
+
+.poomsae_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.poomsae_list li {
+  background-color: var(--light-primary-color);
+  border-radius: var(--border-radius-button);
+  box-shadow: var(--box-shadow-basic);
+  color: white;
+  list-style: none;
+  margin: 0 auto var(--12px) auto;
+  /* margin-bottom: var(--12px); */
+  max-width: 80%;
+  padding: var(--16px);
+  text-align: center;
+  text-underline-offset: 0.25rem;
+}
+
+.emoji {
+  margin-right: var(--12px);
+}
