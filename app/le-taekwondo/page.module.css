@@ -25,13 +25,10 @@
   bottom: 0;
 }
 
-.main_article {
-  padding: 0 var(--24px) 0 var(--24px);
-}
-
 .article_section {
   line-height: 1.75;
   margin-bottom: 4rem;
+  padding: 0 var(--24px) 0 var(--24px);
 }
 
 .section_title {
@@ -97,12 +94,19 @@
 .card_container {
   background-color: white;
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow-default);
+  box-shadow: var(--box-shadow-bg);
   display: flex;
   flex-direction: column;
-  margin-bottom: var(--16px);
+  margin-bottom: var(--24px);
 }
 
 .card_text {
   padding: 0 var(--24px) var(--16px) var(--24px);
+}
+
+.bg_wrapper {
+  background: url("../../public/images/bg-mobile.svg") center no-repeat;
+  background-size: cover;
+  padding-top: 3.5rem;
+  padding-bottom: 2px;
 }
