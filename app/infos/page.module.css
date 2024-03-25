@@ -59,7 +59,7 @@
 }
 
 .card_container {
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-infoscards);
   box-shadow: 2px 2px 20px 1px rgba(20, 26, 51, 0.3);
   flex-shrink: 0;
   flex-basis: 100%;
@@ -210,6 +210,8 @@
 }
 
 .map_iframe {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-basic);
   margin-top: var(--16px);
 }
 
