@@ -213,13 +213,13 @@ const Infos = () => {
             <p className={styles.note_text}>
               L'achat de Dobok (tenue traditionnelle) ou d'équipements de
               protection n'est pas nécessaire pour débuter la pratique du
-              Taekwnondo. <b>Une tenue de sport</b> appropriée suffit !
+              Taekwondo. <b>Une tenue de sport</b> appropriée suffit !
             </p>
 
             <p className={styles.note_text}>
-              De plus, nous organisons en début de saison également des
-              commandes groupées avec notre fournisseur pour équiper ceux qui le
-              souhaitent tout en bénéficiant de réductions.
+              De plus, nous organisons en début de saison des commandes groupées
+              avec notre fournisseur pour équiper ceux qui le souhaitent tout en
+              bénéficiant de réductions.
             </p>
           </section>
 
