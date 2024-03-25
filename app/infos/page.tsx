@@ -164,6 +164,42 @@ const Infos = () => {
               </div>
             </div>
 
+            <section className={styles.section_documents}>
+              <div className={styles.name_container} onClick={handleExpandCard}>
+                <h4 className={styles.documents_name}>
+                  Documents nécessaires pour l'inscription
+                </h4>
+                <button className={`${styles.expand_toggler} ${toggleClass}`}>
+                  <img
+                    src="/icons/expand_more_black_24dp.svg"
+                    alt="Dérouler le texte"
+                  />
+                </button>
+              </div>
+              <div className={`${styles.content_container} ${expandClass}`}>
+                <ul className={styles.documents_list}>
+                  <li>2 photos d'identité</li>
+                  <li>
+                    <a
+                      href="/files/VENDOME TAEKWENDO INSCRIPTION.pdf"
+                      target="_blank"
+                    >
+                      Fiche d'inscription
+                    </a>{" "}
+                    complétée
+                  </li>
+                  <li>
+                    Certificat médical de moins de 3 mois attestant de la
+                    pratique du Taekwondo
+                  </li>
+                  <li>
+                    Règlement de la cotisation et des frais annexes (licence et
+                    passeport si applicable)
+                  </li>
+                </ul>
+              </div>
+            </section>
+
             <h4 className={styles.section_note}>
               &#128161; Vacances scolaires :
             </h4>
@@ -185,35 +221,6 @@ const Infos = () => {
               commandes groupées avec notre fournisseur pour équiper ceux qui le
               souhaitent tout en bénéficiant de réductions.
             </p>
-            <section className={styles.section_documents}>
-              <div className={styles.name_container} onClick={handleExpandCard}>
-                <h4 className={styles.documents_name}>
-                  Documents nécessaires pour l'inscription
-                </h4>
-                <button className={`${styles.expand_toggler} ${toggleClass}`}>
-                  <img
-                    src="/icons/expand_more_black_24dp.svg"
-                    alt="Dérouler le texte"
-                  />
-                </button>
-              </div>
-              <div className={`${styles.content_container} ${expandClass}`}>
-                <ul className={styles.documents_list}>
-                  <li>2 photos d'identité</li>
-                  <li>
-                    <a href="">Fiche d'inscription</a> complétée et signée
-                  </li>
-                  <li>
-                    Certificat médical de moins de 3 mois attestant de la
-                    pratique du Taekwondo
-                  </li>
-                  <li>
-                    Règlement de la cotisation et des frais annexes (licence et
-                    passeport si applicable)
-                  </li>
-                </ul>
-              </div>
-            </section>
           </section>
 
           <div className={styles.bg_wrapper}>
@@ -242,7 +249,7 @@ const Infos = () => {
                 src="https://www.openstreetmap.org/export/embed.html?bbox=1.0679805278778078%2C47.78808242879076%2C1.0789024829864504%2C47.79619128338885&amp;layer=mapnik&amp;marker=47.79213701425164%2C1.073441505432129"
                 width={MapSize.width}
                 height="300"
-                style={{ border: 0, borderRadius: "10px" }}
+                style={{ border: 0 }}
                 className={styles.map_iframe}
               ></iframe>
               {/* <br />
