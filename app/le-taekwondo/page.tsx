@@ -139,7 +139,7 @@ const LeTaekwondo = () => {
                 </div>
                 <p className={styles.card_text}>
                   Activité d'opposition face à un adversaire en utilisant des
-                  techniques de pieds et de poings et de stratégies d'attaque et
+                  techniques de pieds, de poings et de stratégies d'attaque et
                   de défense. C'est la forme de pratique présentée aux Jeux
                   Olympiques. Le port des protections permet de pratiquer en
                   toute sécurité.
