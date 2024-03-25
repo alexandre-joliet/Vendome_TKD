@@ -9,6 +9,12 @@
   width: 48px;
 }
 
+.button_nav {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
 .header_opennavicon {
   transition: all ease-in-out 500ms;
   width: 38px;

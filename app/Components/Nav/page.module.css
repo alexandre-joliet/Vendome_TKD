@@ -19,6 +19,12 @@
   transform: translate(0);
 }
 
+.button_nav {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
 .header_closenavicon {
   transition: all ease-in-out 500ms;
   width: 38px;
