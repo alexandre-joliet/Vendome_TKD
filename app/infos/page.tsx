@@ -1,8 +1,26 @@
+"use client";
+import { useState } from "react";
 import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
 import styles from "./page.module.css";
 
 const Infos = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isToggled, setIsToggled] = useState(false);
+
+  const handleExpandCard = () => {
+    if (isExpanded) {
+      setIsToggled(false);
+      setIsExpanded(false);
+    } else {
+      setIsToggled(true);
+      setIsExpanded(true);
+    }
+  };
+
+  const expandClass = isExpanded ? `${styles.expanded}` : "";
+  const toggleClass = isToggled ? `${styles.toggled}` : "";
+
   const MapSize = {
     width: "100%",
     radius: "10px",
@@ -34,7 +52,7 @@ const Infos = () => {
             </p>
             <div className={`${styles.card_container} ${styles.children}`}>
               <div className={styles.card_info}>
-                <h3 className={styles.info_title}>Enfants (-13 ans)</h3>
+                <h3 className={styles.info_title}>Enfants (6 - 13 ans)</h3>
                 <p className={styles.info_price}>
                   <span className={styles.price}>120€</span>/ pour l'année
                 </p>
@@ -72,7 +90,7 @@ const Infos = () => {
 
             <div className={`${styles.card_container} ${styles.teens}`}>
               <div className={styles.card_info}>
-                <h3 className={styles.info_title}>Adolescents</h3>
+                <h3 className={styles.info_title}>Adolescents (14 - 18 ans)</h3>
                 <p className={styles.info_price}>
                   <span className={styles.price}>130€</span>/ pour l'année
                 </p>
@@ -167,6 +185,35 @@ const Infos = () => {
               commandes groupées avec notre fournisseur pour équiper ceux qui le
               souhaitent tout en bénéficiant de réductions.
             </p>
+            <section className={styles.section_documents}>
+              <div className={styles.name_container} onClick={handleExpandCard}>
+                <h4 className={styles.documents_name}>
+                  Documents nécessaires pour l'inscription
+                </h4>
+                <button className={`${styles.expand_toggler} ${toggleClass}`}>
+                  <img
+                    src="/icons/expand_more_black_24dp.svg"
+                    alt="Dérouler le texte"
+                  />
+                </button>
+              </div>
+              <div className={`${styles.content_container} ${expandClass}`}>
+                <ul className={styles.documents_list}>
+                  <li>2 photos d'identité</li>
+                  <li>
+                    <a href="">Fiche d'inscription</a> complétée et signée
+                  </li>
+                  <li>
+                    Certificat médical de moins de 3 mois attestant de la
+                    pratique du Taekwondo
+                  </li>
+                  <li>
+                    Règlement de la cotisation et des frais annexes (licence et
+                    passeport si applicable)
+                  </li>
+                </ul>
+              </div>
+            </section>
           </section>
 
           <div className={styles.bg_wrapper}>
