@@ -57,6 +57,11 @@
   cursor: pointer;
   outline: none;
   margin-right: var(--16px);
+  transition: all ease-in-out 300ms;
+}
+
+.toggled {
+  transform: rotate(180deg);
 }
 
 .content_container {
@@ -96,7 +101,6 @@
   max-width: 80%;
   padding: var(--16px);
   text-align: center;
-  text-underline-offset: 0.25rem;
 }
 
 .emoji {

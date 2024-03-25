@@ -1,6 +1,6 @@
 "use client";
+import { PoomsaeType } from "@/app/types/poomsae";
 import styles from "./page.module.css";
-import { PoomsaeType } from "@/app/@types/poomsae";
 import { useState } from "react";
 
 type PoomsaeProps = {
@@ -9,16 +9,20 @@ type PoomsaeProps = {
 
 const CardPoomsae = ({ poomsae }: PoomsaeProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isToggled, setIsToggled] = useState(false);
 
   const handleExpandCard = () => {
     if (isExpanded) {
+      setIsToggled(false);
       setIsExpanded(false);
     } else {
+      setIsToggled(true);
       setIsExpanded(true);
     }
   };
 
   const expandClass = isExpanded ? `${styles.expanded}` : "";
+  const toggleClass = isToggled ? `${styles.toggled}` : "";
 
   const bgPoomsae = () => {
     let className = "";
@@ -44,9 +48,9 @@ const CardPoomsae = ({ poomsae }: PoomsaeProps) => {
           <h4 className={styles.poomsae_name}>
             {poomsae.id} - {poomsae.name}
           </h4>
-          <button className={styles.expand_toggler}>
+          <button className={`${styles.expand_toggler} ${toggleClass}`}>
             <img
-              src="/icons/expand_more_black_24dp.svg"
+              src="/icons/expand_more_white_24dp.svg"
               alt="Dérouler le texte"
             />
           </button>
