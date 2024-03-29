@@ -1,25 +1,90 @@
 "use client";
-import { FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import styles from "./page.module.css";
+import Joi from "joi";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [honeyMail, setHoneyMail] = useState("");
-  const [validationMessage, setValidationMessage] = useState(false);
-  const [modalOpen, setModalOpen] = useState(false);
+  const [validationModal, setValidationModal] = useState(false);
+  const [formErrorMessage, setFormErrorMessage] = useState(false);
 
+  //* VALIDATIONS
+  const [nameNotificationError, setNameNotificationError] = useState(false);
+  const [emailNotificationError, setEmailNotificationError] = useState(false);
+  const [messageNotificationError, setMessageNotificationError] =
+    useState(false);
+
+  const handleNameValidation = (event: ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    setName(value);
+
+    const schema = Joi.string().pattern(
+      new RegExp(/^[a-zàâçéèêëîïôûùüÿñæœ -']{2,50}$/i)
+    );
+    const validation = schema.validate(value);
+
+    if (validation.error != undefined) {
+      setNameNotificationError(true);
+    } else {
+      setNameNotificationError(false);
+    }
+
+    if (value === "") {
+      setNameNotificationError(false);
+    }
+  };
+
+  const handleEmailValidation = (event: ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    setEmail(value);
+
+    const schema = Joi.string().email({ tlds: false });
+    const validation = schema.validate(value);
+
+    if (validation.error != undefined) {
+      setEmailNotificationError(true);
+    } else {
+      setEmailNotificationError(false);
+    }
+
+    if (value === "") {
+      setEmailNotificationError(false);
+    }
+  };
+
+  const handleMessageValidation = (event: ChangeEvent<HTMLTextAreaElement>) => {
+    const value = event.target.value;
+    setMessage(value);
+
+    const schema = Joi.string().pattern(
+      new RegExp(/^[\r\na-zàâçéèêëîïôûùüÿñæœ0-9 -'",.:;?!€()@/-]{50,2000}$/i)
+    );
+    const validation = schema.validate(value);
+
+    if (validation.error != undefined) {
+      setMessageNotificationError(true);
+    } else {
+      setMessageNotificationError(false);
+    }
+
+    if (value === "") {
+      setMessageNotificationError(false);
+    }
+  };
+
+  //* FORM
   const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    // honeypot condition
+    //* HONEYPOT
     if (honeyMail != "") {
-      setValidationMessage(true);
-      // setName("");
-      // setEmail("");
-      // setMessage("");
-      setModalOpen(true);
+      setName("");
+      setEmail("");
+      setMessage("");
+      setValidationModal(true);
       return;
     }
 
@@ -28,7 +93,7 @@ const ContactForm = () => {
         method: "POST",
         body: JSON.stringify({
           name: name,
-          mail: email,
+          email: email,
           message: message,
         }),
         headers: {
@@ -40,17 +105,20 @@ const ContactForm = () => {
         console.log("falling over");
         throw new Error(`response status: ${response.status}`);
       }
+      setValidationModal(true);
+      setName("");
+      setEmail("");
+      setMessage("");
       const responseData = await response.json();
-      console.log(responseData["message"]);
-
-      alert("Message successfully sent");
+      // console.log(responseData);
     } catch (error: any) {
       console.error("Error:", error);
+      setFormErrorMessage(true);
     }
   };
 
   const handleCloseModal = () => {
-    setModalOpen(false);
+    setValidationModal(false);
   };
 
   return (
@@ -63,10 +131,18 @@ const ContactForm = () => {
           type="text"
           id="name"
           value={name}
-          onChange={(event) => setName(event.target.value)}
+          onChange={(event) => handleNameValidation(event)}
           required
           className={styles.form_input}
         />
+        {nameNotificationError === true && (
+          <div className={styles.error_notification}>
+            <p>
+              Le nom renseigné n&apos;est pas valide. Il doit faire au miminum 2
+              caractères et ne pas contenir de caractères spéciaux.
+            </p>
+          </div>
+        )}
         <label htmlFor="mail" className={styles.form_label}>
           Votre adresse mail{" "}
           <span className={styles.label_required}>(requis)</span>
@@ -75,10 +151,15 @@ const ContactForm = () => {
           type="email"
           id="mail"
           value={email}
-          onChange={(event) => setEmail(event.target.value)}
+          onChange={(event) => handleEmailValidation(event)}
           required
           className={styles.form_input}
         />
+        {emailNotificationError === true && (
+          <div className={styles.error_notification}>
+            <p>L&apos;adresse mail renseignée n&apos;est pas valide.</p>
+          </div>
+        )}
         <label htmlFor="message" className={styles.form_label}>
           Votre message <span className={styles.label_required}>(requis)</span>
         </label>
@@ -86,24 +167,42 @@ const ContactForm = () => {
           id="message"
           rows={10}
           value={message}
-          onChange={(event) => setMessage(event.target.value)}
+          onChange={(event) => handleMessageValidation(event)}
           required
           className={styles.form_text}
         />
-        {/* form honeypot for bots */}
+        {messageNotificationError === true && (
+          <div className={styles.error_notification}>
+            <p>
+              Votre message n&apos;est pas valide. Il doit faire au miminum 50
+              caractères et ne peut pas contenir certains caractères spéciaux.
+            </p>
+          </div>
+        )}
+        {/* Form honeypot for bots */}
         <input
           type="email"
-          name="real_mail"
+          name="real_email"
           value={honeyMail}
           onChange={(event) => setHoneyMail(event.target.value)}
           aria-hidden="true"
-          className={styles.honeymail}
+          autoComplete="off"
+          tabIndex={-1}
+          className={styles.real_email}
         />{" "}
         <button type="submit" className={styles.form_button}>
           Envoyer
         </button>
+        {formErrorMessage === true && (
+          <div className={styles.error_form}>
+            <p>
+              Une erreur interne est survenue lors de l'envoi de votre message.
+              Veuillez nous en excuser et réssayer plus tard.
+            </p>
+          </div>
+        )}
       </form>
-      {validationMessage && modalOpen && (
+      {validationModal && (
         <div className={styles.modal_bg}>
           <dialog open className={styles.modal}>
             <p className={styles.modal_text}>
@@ -111,6 +210,7 @@ const ContactForm = () => {
             </p>
             <form method="dialog">
               <button
+                type="button"
                 autoFocus
                 onClick={handleCloseModal}
                 className={styles.modal_button}
