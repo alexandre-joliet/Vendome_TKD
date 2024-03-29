@@ -37,6 +37,30 @@
   padding: var(--16px);
 }
 
+.error_notification,
+.error_form {
+  background-color: #ffb62e;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-basic);
+  margin: -1rem 0 1rem 0;
+  padding: 0.5rem 1rem;
+}
+
+.error_notification p {
+  color: var(--light-darkest-variation-title);
+}
+
+.error_form {
+  background-color: red;
+  margin-top: var(--16px);
+}
+
+.error_form p {
+  color: white;
+  font-weight: 700;
+}
+
 .form_button,
 .modal_button {
   background-color: var(--light-primary-color);
@@ -62,9 +86,12 @@
   transform: scale(0.98);
 }
 
-/* .honeymail {
-  display: none;
-} */
+.real_email {
+  /* display: none; */
+  position: absolute;
+  left: -9999px;
+  visibility: collapse;
+}
 
 .modal_bg {
   background-color: rgb(255 255 255 / 30%);
