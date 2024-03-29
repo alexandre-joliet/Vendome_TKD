@@ -8,7 +8,7 @@
   /***** COLORS *****/
   --background-light: #ffffff;
   --light-primary-color: #395bcf;
-  --light-darkest-variation-title: rgb(20, 26, 51);
+  --light-darkest-variation-title: #141a33;
   --light-dark-variation-text: #505673;
   --light-medium-variation-nondeco-border: #878ca8;
   --light-light-variation-deco-border: rgb(218, 222, 242);
@@ -35,7 +35,9 @@
   --32px: 2rem;
 
   --box-shadow-default: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
-  --box-shadow-basic: 2px 2px 20px 1px rgba(212, 212, 212, 0.5);
+  --box-shadow-default-hover: 20px 20px 75px #cccccc, -20px -20px 75px #ffffff;
+  --box-shadow-basic: 2px 2px 20px 1px rgba(212, 212, 212, 0.8);
+  --box-shadow-basic-hover: 2px 2px 20px 1px rgba(190, 190, 190, 1);
   --box-shadow-bg: 20px 20px 60px #d3d3d8, -20px -20px 60px #ffffff;
   --box-shadow-menu: 2px 2px 20px 1px rgba(212, 212, 212, 0.5);
 }
