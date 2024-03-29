@@ -16,7 +16,7 @@ const Home = () => {
         </section>
         <article className={styles.intro_article}>
           <p className={styles.intro_text}>
-            Niché au cœur de la ville de Vendôme, dans le département du
+            Situé au cœur de la ville de Vendôme, dans le département du
             Loir-et-Cher (41), notre club offre un environnement dynamique et
             inclusif pour les pratiquants de tous âges et de tous niveaux. Que
             vous soyez un débutant curieux ou un expert chevronné, tout est mis
@@ -26,10 +26,10 @@ const Home = () => {
 
           <p className={styles.intro_text}>
             Au-delà de l'apprentissage des techniques de coups de pieds et de
-            poings, nous nous engageons à promouvoir des valeurs telles que le
-            respect, la persévérance et l'esprit d'équipe. Nos cours sont conçus
-            pour favoriser le développement personnel, physique et mental de nos
-            membres, les aidant ainsi à atteindre leurs objectifs, qu'il
+            coups de poings, nous nous engageons à promouvoir des valeurs telles
+            que le respect, la persévérance et l'esprit d'équipe. Nos cours sont
+            conçus pour favoriser le développement personnel, physique et mental
+            de nos membres, les aidant ainsi à atteindre leurs objectifs, qu'il
             s'agisse de remise en forme, de compétition ou simplement de
             plaisir.
           </p>

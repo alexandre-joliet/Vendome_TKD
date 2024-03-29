@@ -16,10 +16,10 @@ const LexiquePoomsaes = () => {
         <article className={styles.main_article}>
           <section className={styles.article_section}>
             <p className={styles.section_text}>
-              Le taekwondo, en tant qu'art martial millénaire, est imprégné
+              Le Taekwondo, en tant qu'art martial millénaire, est imprégné
               d'une richesse culturelle profonde, façonnée par l'histoire et les
               traditions de la Corée. Au-delà de ses techniques de combat, le
-              taekwondo véhicule des valeurs de respect, de discipline et de
+              Taekwondo véhicule des valeurs de respect, de discipline et de
               maîtrise de soi, transmises à travers un vocabulaire riche et
               symbolique. Chaque mouvement, chaque terme utilisé, porte en lui
               une signification qui transcende le simple geste physique,
@@ -31,7 +31,7 @@ const LexiquePoomsaes = () => {
               adversaire et son instructeur, jusqu'aux techniques comme "
               <i>Ap Chagi</i>" (coup de pied avant) ou "<i>Dolyo Chagi</i>"
               (coup de pied circulaire), chaque mot dans le vocabulaire du
-              taekwondo est une fenêtre ouverte sur son héritage culturel et
+              Taekwondo est une fenêtre ouverte sur son héritage culturel et
               spirituel, offrant aux pratiquants une voie vers l'épanouissement
               personnel et la découverte de soi.
             </p>
@@ -51,8 +51,8 @@ const LexiquePoomsaes = () => {
               Chaque Poomsae a son propre tempo qui correspond aux différents
               enchaînements, de sorte que chaque blocage soit suivi
               instinctivement d'une contre-attaque. Il commence et se termine
-              toujours par la position "Tchaliot Seugui", suivie du salut
-              "Kyongnye", puis est annoncé à haute voix.
+              toujours par la position "<i>Tchaliot Seugui</i>", suivie du salut
+              "<i>Kyongnye</i>", puis est annoncé à haute voix.
             </p>
             <p className={styles.section_text}>
               Il est essentiel de "vivre" son Poomsae, en donnant l'impression

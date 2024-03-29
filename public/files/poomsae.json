@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Taegeuk Il Jang",
-    "description": "Symbolise le concept du 'Keon', symbolisant le ciel et la lumière et toute chose dans l'univers. Ce poomsae facile représente le début de la progression en Taekwondo.",
+    "description": "Symbolise le concept du ''Keon'', symbolisant le ciel et la lumière et toute chose dans l'univers. Ce poomsae facile représente le début de la progression en Taekwondo.",
     "picture": "./files/Poomsae1.jpg",
     "file_pdf": "./files/Poomsae1.pdf",
     "video": "https://youtu.be/WhkjRruCBTo?si=wRrEzLH662qlhzqy"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Taegeuk Yi Jang",
-    "description": "Représente le 'Tae', symbolisant la terre et la croissance. Il se concentre sur l'équilibre et l'harmonie, et enseigne des techniques plus avancées que le premier Poomsae.",
+    "description": "Représente le ''Tae'', symbolisant la terre et la croissance. Il se concentre sur l'équilibre et l'harmonie, et enseigne des techniques plus avancées que le premier Poomsae.",
     "picture": "./files/Poomsae2.jpg",
     "file_pdf": "./files/Poomsae2.pdf",
     "video": "https://youtu.be/tGlrUplKHh8?si=SjLkYWw8FJdYG07h"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "name": "Taegeuk Sam Jang",
-    "description": "Incarne le 'Ri', symbolisant le feu et la chaleur. Il met l'accent sur la fluidité des mouvements et l'agilité.",
+    "description": "Incarne le ''Ri'', symbolisant le feu et la chaleur. Il met l'accent sur la fluidité des mouvements et l'agilité.",
     "picture": "./files/Poomsae3.jpg",
     "file_pdf": "./files/Poomsae3.pdf",
     "video": "https://youtu.be/ksSqKt0UkWo?si=b0zQZd0vxiqx5k8i"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "name": "Taegeuk Sa Jang",
-    "description": "Représente le 'Jin', symbolisant l'eau et la flexibilité. Il met l'accent sur la précision des mouvements et la maîtrise de soi.",
+    "description": "Représente le ''Jin'', symbolisant l'eau et la flexibilité. Il met l'accent sur la précision des mouvements et la maîtrise de soi.",
     "picture": "./files/Poomsae4.jpg",
     "file_pdf": "./files/Poomsae4.pdf",
     "video": "https://youtu.be/Lt917gacJho?si=cjtRJbsho1oDh2uF"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "name": "Taegeuk Oh Jang",
-    "description": "Symbolise le 'Son', représentant le vent et le dynamisme. Il met l'accent sur la puissance et l'énergie dans l'exécution des techniques.",
+    "description": "Symbolise le ''Son'', représentant le vent et le dynamisme. Il met l'accent sur la puissance et l'énergie dans l'exécution des techniques.",
     "picture": "./files/Poomsae5.jpg",
     "file_pdf": "./files/Poomsae5.pdf",
     "video": "https://youtu.be/VdqNEAHWCBM?si=e6lUb64sNUkjq52R"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "name": "Taegeuk Yuk Jang",
-    "description": "Incarne le 'Gam', symbolisant la montagne et la stabilité. Il enseigne la force intérieure et l'endurance.",
+    "description": "Incarne le ''Gam'', symbolisant la montagne et la stabilité. Il enseigne la force intérieure et l'endurance.",
     "picture": "./files/Poomsae6.jpg",
     "file_pdf": "./files/Poomsae6.pdf",
     "video": "https://youtu.be/jcBwWo4wN7c?si=yce7opJgl6j6DJeX"
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "name": "Taegeuk Chil Jang",
-    "description": "Représente le 'Gon', symbolisant la terre et la fertilité. Il met l'accent sur la concentration et la maîtrise de l'esprit.",
+    "description": "Représente le ''Gon'', symbolisant la terre et la fertilité. Il met l'accent sur la concentration et la maîtrise de l'esprit.",
     "picture": "./files/Poomsae7.jpg",
     "file_pdf": "./files/Poomsae7.pdf",
     "video": "https://youtu.be/6FUM1p6qqhQ?si=gFZgcWQUMMf3Cx7e"
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "name": "Taegeuk Pal Jang",
-    "description": "Symbolise le 'Gan', symbolisant le ciel et la fermeté. Il enseigne l'aboutissement des compétences acquises dans les Poomsae précédents et permet aux pratiquants d’obtenir le grade de 1er dan. ",
+    "description": "Symbolise le ''Gan'', symbolisant le ciel et la fermeté. Il enseigne l'aboutissement des compétences acquises dans les Poomsaes précédents et permet aux pratiquants d’obtenir le grade de 1er dan. ",
     "picture": "./files/Poomsae8.jpg",
     "file_pdf": "./files/Poomsae8.pdf",
     "video": "https://youtu.be/Gr_Je2ZkgkI?si=D1NVVMLqETmr8LRI"

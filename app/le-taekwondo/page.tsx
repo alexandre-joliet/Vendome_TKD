@@ -41,9 +41,9 @@ const LeTaekwondo = () => {
             <p className={styles.section_text}>
               Le Taekwondo puise ses racines dans une longue tradition de combat
               et de philosophie. Ses origines remontent à l'ère des Trois
-              Royaumes de la Corée (57 av. J.-C. - 668 apr. J.-C.), où les
-              techniques de combat étaient développées pour la défense
-              personnelle et la protection des royaumes.
+              Royaumes de la Corée (57 av. JC - 668 ap. JC), où les techniques
+              de combat étaient développées pour la défense personnelle et la
+              protection des royaumes.
             </p>
             <p className={styles.section_text}>
               Cependant, le Taekwondo moderne prend véritablement forme après la
@@ -73,7 +73,7 @@ const LeTaekwondo = () => {
             <p className={styles.section_text}>
               Toutefois, des différends internes conduisent à une scission en
               1972, donnant naissance à une deuxième organisation majeure, la
-              World Taekwondo Federation (rénommée WT depuis peu). Cette
+              World Taekwondo Federation (renommée WT depuis peu). Cette
               division marque le début d'une évolution divergente entre les deux
               organisations, avec des variations dans les règles, les techniques
               et les compétitions.
@@ -127,7 +127,7 @@ const LeTaekwondo = () => {
                 <p className={styles.card_text}>
                   Un poomsae est un combat codifié contre plusieurs adversaires
                   imaginaires utilisant des mouvements et des positions de base
-                  : coup de pieds, coups de poings et blocages.
+                  : coups de pieds, coups de poings et blocages.
                 </p>
               </section>
 
@@ -155,7 +155,7 @@ const LeTaekwondo = () => {
                 <p className={styles.card_text}>
                   Ensemble de techniques de self-défense : clefs, balayages,
                   projection et contrôle articulaire. Il est utilisé contre des
-                  attaques ou des saisies. Le Ho Shin Soul complête la pratique
+                  attaques ou des saisies. Le Ho Shin Soul complète la pratique
                   du Taekwondo.
                 </p>
               </section>
