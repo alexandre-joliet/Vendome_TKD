@@ -4,7 +4,6 @@
   box-shadow: var(--box-shadow-default);
   display: flex;
   flex-direction: column;
-  margin: 0 var(--24px) 3rem var(--24px);
   text-align: center;
   transition: all 300ms ease-in-out;
 }
@@ -26,4 +25,11 @@
   font-weight: 700;
   padding: var(--20px);
   text-decoration: none;
+}
+
+/** MEDIA QUERIES **/
+@media all and (min-width: 768px) {
+  .card_container {
+    width: 30%;
+  }
 }
