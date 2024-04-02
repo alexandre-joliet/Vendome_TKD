@@ -118,47 +118,50 @@ const LeTaekwondo = () => {
               <h2 className={styles.section_title}>
                 Les composantes du Taekwondo
               </h2>
-              <section className={styles.card_container}>
-                <div
-                  className={`${styles.card_header} ${styles.card_header_poomsae}`}
-                >
-                  <h1 className={styles.card_title}>Les Poomsaes</h1>
-                </div>
-                <p className={styles.card_text}>
-                  Un poomsae est un combat codifié contre plusieurs adversaires
-                  imaginaires utilisant des mouvements et des positions de base
-                  : coups de pieds, coups de poings et blocages.
-                </p>
-              </section>
+              <div className={styles.cards_container}>
+                <section className={styles.card_container}>
+                  <div
+                    className={`${styles.card_header} ${styles.card_header_poomsae}`}
+                  >
+                    <h1 className={styles.card_title}>Les Poomsaes</h1>
+                  </div>
+                  <p className={styles.card_text}>
+                    Un poomsae est un combat codifié contre plusieurs
+                    adversaires imaginaires utilisant des mouvements et des
+                    positions de base : coups de pieds, coups de poings et
+                    blocages.
+                  </p>
+                </section>
 
-              <section className={styles.card_container}>
-                <div
-                  className={`${styles.card_header} ${styles.card_header_combat}`}
-                >
-                  <h1 className={styles.card_title}>Le Combat</h1>
-                </div>
-                <p className={styles.card_text}>
-                  Activité d'opposition face à un adversaire en utilisant des
-                  techniques de pieds, de poings et de stratégies d'attaque et
-                  de défense. C'est la forme de pratique présentée aux Jeux
-                  Olympiques. Le port des protections permet de pratiquer en
-                  toute sécurité.
-                </p>
-              </section>
+                <section className={styles.card_container}>
+                  <div
+                    className={`${styles.card_header} ${styles.card_header_combat}`}
+                  >
+                    <h1 className={styles.card_title}>Le Combat</h1>
+                  </div>
+                  <p className={styles.card_text}>
+                    Activité d'opposition face à un adversaire en utilisant des
+                    techniques de pieds, de poings et de stratégies d'attaque et
+                    de défense. C'est la forme de pratique présentée aux Jeux
+                    Olympiques. Le port des protections permet de pratiquer en
+                    toute sécurité.
+                  </p>
+                </section>
 
-              <section className={styles.card_container}>
-                <div
-                  className={`${styles.card_header} ${styles.card_header_hoshinsoul}`}
-                >
-                  <h1 className={styles.card_title}>Ho Shin Soul</h1>
-                </div>
-                <p className={styles.card_text}>
-                  Ensemble de techniques de self-défense : clefs, balayages,
-                  projection et contrôle articulaire. Il est utilisé contre des
-                  attaques ou des saisies. Le Ho Shin Soul complète la pratique
-                  du Taekwondo.
-                </p>
-              </section>
+                <section className={styles.card_container}>
+                  <div
+                    className={`${styles.card_header} ${styles.card_header_hoshinsoul}`}
+                  >
+                    <h1 className={styles.card_title}>Ho Shin Soul</h1>
+                  </div>
+                  <p className={styles.card_text}>
+                    Ensemble de techniques de self-défense : clefs, balayages,
+                    projection et contrôle articulaire. Il est utilisé contre
+                    des attaques ou des saisies. Le Ho Shin Soul complète la
+                    pratique du Taekwondo.
+                  </p>
+                </section>
+              </div>
             </section>
           </div>
         </article>
