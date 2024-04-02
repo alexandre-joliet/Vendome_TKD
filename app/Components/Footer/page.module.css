@@ -3,7 +3,7 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding: var(--32px) var(--24px) var(--32px) var(--24px);
 }
 
@@ -19,5 +19,6 @@
 }
 
 .social_fb {
+  border-radius: 10px;
   width: 48px;
 }
