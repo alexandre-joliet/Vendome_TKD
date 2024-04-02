@@ -7,6 +7,7 @@
 
   /***** COLORS *****/
   --background-light: #ffffff;
+  --background-light-wrapper: #f8f8fe;
   --light-primary-color: #395bcf;
   --light-darkest-variation-title: #141a33;
   --light-dark-variation-text: #505673;
@@ -34,6 +35,7 @@
   --24px: calc(24rem / 16);
   --32px: 2rem;
   --40px: 2.5rem;
+  --48px: 3rem;
 
   --margin-bottom-small: 1rem;
   --margin-bottom-large: 3rem;
@@ -145,7 +147,7 @@
 
 html,
 body {
-  max-width: var(--max-width);
+  /* max-width: var(--max-width); */
   overflow-x: hidden;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
