@@ -16,8 +16,8 @@
 
 .main_title {
   color: white;
-  font-size: var(--32px);
-  font-weight: 900;
+  font-size: var(--40px);
+  font-weight: 300;
   text-shadow: 2px 2px 20px rgb(20, 26, 51, 0.3);
   margin-bottom: var(--16px);
   padding: 0 var(--24px) 0 var(--24px);
@@ -51,4 +51,41 @@
   margin-bottom: var(--16px);
   padding: 0.5rem 0;
   text-align: center;
+}
+
+.bg_wrapper {
+  /* background: url("../public/images/bg-mobile.svg") center no-repeat; */
+  background-color: var(--background-light-wrapper);
+  background-size: cover;
+  padding-top: 3rem;
+  padding-bottom: 2px;
+}
+
+/** MEDIA QUERIES **/
+@media all and (min-width: 376px) and (max-width: 767px) {
+  .main_title {
+    font-size: 3rem;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .main_title,
+  .main_article {
+    padding: 0 var(--48px) 0 var(--48px);
+  }
+
+  .main_title {
+    font-size: 4rem;
+  }
+
+  .section_title {
+    font-size: var(--24px);
+    font-weight: 900;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .main_title {
+    font-size: 5rem;
+  }
 }
