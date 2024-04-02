@@ -29,3 +29,10 @@
   border-radius: 10px;
   width: 48px;
 }
+
+/** MEDIA QUERIES **/
+@media all and (min-width: 1024px) {
+  .footer {
+    padding: var(--32px) var(--48px) var(--32px) var(--48px);
+  }
+}

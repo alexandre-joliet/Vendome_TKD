@@ -6,7 +6,7 @@
   position: absolute;
   z-index: 1;
   width: 100%;
-  max-width: var(--max-width);
+  /* max-width: var(--max-width); */
 }
 
 .header_logo {
@@ -28,4 +28,11 @@
 .header_opennavicon:hover {
   cursor: pointer;
   transform: rotate3d(0, 0, 1, 90deg);
+}
+
+/** MEDIA QUERIES **/
+@media all and (min-width: 1024px) {
+  .header {
+    padding: var(--24px) var(--48px);
+  }
 }
