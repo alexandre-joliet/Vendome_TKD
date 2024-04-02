@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./page.module.css";
 import NavBurger from "../Nav/NavBurger";
+import Link from "next/link";
 
 const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
@@ -25,11 +26,13 @@ const Header = () => {
             onClick={handleOpenMenu}
           ></img>
         </button>
-        <img
-          className={styles.header_logo}
-          src="/logos/Logo TKD Light.png"
-          alt="Logo du club"
-        ></img>
+        <Link href="/">
+          <img
+            className={styles.header_logo}
+            src="/logos/Logo TKD Light.png"
+            alt="Logo du club"
+          ></img>
+        </Link>
       </header>
       <NavBurger menuIsOpen={menuIsOpen} onClickMenu={setMenuIsOpen} />
     </>
