@@ -1,17 +1,17 @@
 .main_header {
   background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.8)),
-    url("../public/images/VendômeCover.jpg");
+    url("../public/images/AICover.jpeg");
   background-size: cover;
   background-position: center;
   margin-bottom: var(--16px);
-  height: 15rem;
+  height: 100vh;
   position: relative;
 }
 
 .main_title {
   color: white;
-  font-size: var(--32px);
-  font-weight: 900;
+  font-size: var(--40px);
+  font-weight: 300;
   text-shadow: 2px 2px 20px rgb(20, 26, 51, 0.3);
   margin-bottom: var(--16px);
   padding: 0 var(--24px) 0 var(--24px);
@@ -33,7 +33,7 @@
 
 .intro_text {
   line-height: 1.75;
-  margin-bottom: var(--16px);
+  margin-bottom: var(--margin-bottom-small);
 }
 
 .bg_wrapper {
@@ -41,4 +41,30 @@
   background-size: cover;
   padding-top: 3.5rem;
   padding-bottom: 2px;
+}
+
+.cards_container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--32px);
+  justify-content: center;
+  margin: 0 var(--24px) var(--margin-bottom-large) var(--24px);
+}
+
+/** MEDIA QUERIES **/
+@media all and (min-width: 376px) and (max-width: 767px) {
+  .main_title {
+    font-size: 3rem;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .main_title {
+    font-size: 4rem;
+  }
+
+  .cards_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
