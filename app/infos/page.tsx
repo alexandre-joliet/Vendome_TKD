@@ -50,117 +50,121 @@ const Infos = () => {
             <p className={styles.card_free}>
               Deux cours d'essai offerts et sans engagement !
             </p>
-            <div className={`${styles.card_container} ${styles.children}`}>
-              <div className={styles.card_info}>
-                <h3 className={styles.info_title}>Enfants (6 - 13 ans)</h3>
-                <p className={styles.info_price}>
-                  <span className={styles.price}>120€</span>/ pour l'année
-                </p>
+            <div className={styles.cards_container}>
+              <div className={`${styles.card_container} ${styles.children}`}>
+                <div className={styles.card_info}>
+                  <h3 className={styles.info_title}>Enfants (6 - 13 ans)</h3>
+                  <p className={styles.info_price}>
+                    <span className={styles.price}>120€</span>/ pour l'année
+                  </p>
+                </div>
+                <div className={styles.card_hours}>
+                  <p className={styles.info_hours}>
+                    <img
+                      src="/icons/event_white_48dp.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    Mardis et jeudis 18h - 19h
+                  </p>
+                </div>
+                <div className={styles.card_extras}>
+                  <table className={styles.table_price}>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span>&#11088;</span>Licence FFTDA (obligatoire)
+                        </td>
+                        <td className={styles.extra_price}>+35€</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span>&#11088;</span>Passeport (obligatoire 1ère année
+                          et valable 8 ans)
+                        </td>
+                        <td className={styles.extra_price}>+20€</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-              <div className={styles.card_hours}>
-                <p className={styles.info_hours}>
-                  <img
-                    src="/icons/event_white_48dp.svg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  Mardis et jeudis 18h - 19h
-                </p>
-              </div>
-              <div className={styles.card_extras}>
-                <table className={styles.table_price}>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <span>&#11088;</span>Licence FFTDA (obligatoire)
-                      </td>
-                      <td className={styles.extra_price}>+35€</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span>&#11088;</span>Passeport (obligatoire 1ère année
-                        et valable 8 ans)
-                      </td>
-                      <td className={styles.extra_price}>+20€</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
 
-            <div className={`${styles.card_container} ${styles.teens}`}>
-              <div className={styles.card_info}>
-                <h3 className={styles.info_title}>Adolescents (14 - 18 ans)</h3>
-                <p className={styles.info_price}>
-                  <span className={styles.price}>130€</span>/ pour l'année
-                </p>
+              <div className={`${styles.card_container} ${styles.teens}`}>
+                <div className={styles.card_info}>
+                  <h3 className={styles.info_title}>
+                    Adolescents (14 - 18 ans)
+                  </h3>
+                  <p className={styles.info_price}>
+                    <span className={styles.price}>130€</span>/ pour l'année
+                  </p>
+                </div>
+                <div className={styles.card_hours}>
+                  <p className={styles.info_hours}>
+                    <img
+                      src="/icons/event_white_48dp.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    Mardis et jeudis 18h - 19h
+                  </p>
+                </div>
+                <div className={styles.card_extras}>
+                  <table className={styles.table_price}>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span>&#11088;</span>Licence FFTDA (obligatoire)
+                        </td>
+                        <td className={styles.extra_price}>+35€</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span>&#11088;</span>Passeport (obligatoire 1ère année
+                          et valable 8 ans)
+                        </td>
+                        <td className={styles.extra_price}>+20€</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-              <div className={styles.card_hours}>
-                <p className={styles.info_hours}>
-                  <img
-                    src="/icons/event_white_48dp.svg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  Mardis et jeudis 18h - 19h
-                </p>
-              </div>
-              <div className={styles.card_extras}>
-                <table className={styles.table_price}>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <span>&#11088;</span>Licence FFTDA (obligatoire)
-                      </td>
-                      <td className={styles.extra_price}>+35€</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span>&#11088;</span>Passeport (obligatoire 1ère année
-                        et valable 8 ans)
-                      </td>
-                      <td className={styles.extra_price}>+20€</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
 
-            <div className={`${styles.card_container} ${styles.adults}`}>
-              <div className={styles.card_info}>
-                <h3 className={styles.info_title}>Adultes</h3>
-                <p className={styles.info_price}>
-                  <span className={styles.price}>150€</span>/ pour l'année
-                </p>
-              </div>
-              <div className={styles.card_hours}>
-                <p className={styles.info_hours}>
-                  <img
-                    src="/icons/event_white_48dp.svg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  Mardis et jeudis 19h05 - 20h30
-                </p>
-              </div>
-              <div className={styles.card_extras}>
-                <table className={styles.table_price}>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <span>&#11088;</span>Licence FFTDA (obligatoire)
-                      </td>
-                      <td className={styles.extra_price}>+35€</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span>&#11088;</span>Passeport (obligatoire 1ère année
-                        et valable 8 ans)
-                      </td>
-                      <td className={styles.extra_price}>+20€</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className={`${styles.card_container} ${styles.adults}`}>
+                <div className={styles.card_info}>
+                  <h3 className={styles.info_title}>Adultes</h3>
+                  <p className={styles.info_price}>
+                    <span className={styles.price}>150€</span>/ pour l'année
+                  </p>
+                </div>
+                <div className={styles.card_hours}>
+                  <p className={styles.info_hours}>
+                    <img
+                      src="/icons/event_white_48dp.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    Mardis et jeudis 19h05 - 20h30
+                  </p>
+                </div>
+                <div className={styles.card_extras}>
+                  <table className={styles.table_price}>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span>&#11088;</span>Licence FFTDA (obligatoire)
+                        </td>
+                        <td className={styles.extra_price}>+35€</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span>&#11088;</span>Passeport (obligatoire 1ère année
+                          et valable 8 ans)
+                        </td>
+                        <td className={styles.extra_price}>+20€</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
 
