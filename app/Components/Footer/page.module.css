@@ -7,6 +7,13 @@
   padding: var(--32px) var(--24px) var(--32px) var(--24px);
 }
 
+.infos_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 70%;
+}
+
 .infos_title {
   font-size: var(--18px);
   font-weight: 700;
