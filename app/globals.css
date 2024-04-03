@@ -34,6 +34,7 @@
   --20px: 1.25rem;
   --22px: calc(22rem / 16);
   --24px: calc(24rem / 16);
+  --28px: calc(28rem / 16);
   --32px: 2rem;
   --40px: 2.5rem;
   --48px: 3rem;
@@ -150,7 +151,6 @@
 
 html,
 body {
-  max-width: var(--max-width);
   overflow-x: hidden;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -159,6 +159,7 @@ body {
   min-height: 100vh;
   margin: auto;
   width: 100%;
+  /* max-width: var(--max-width); */
 }
 
 img,
