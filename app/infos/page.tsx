@@ -44,7 +44,7 @@ const Infos = () => {
 
           <section className={styles.article_section}>
             <h2 className={styles.section_title}>
-              <img src="/icons/info_black_24dp.svg" alt="" aria-hidden="true" />
+              <img src="/icons/info.svg" alt="" aria-hidden="true" />
               Horaires et tarifs
             </h2>
             <p className={styles.card_free}>
@@ -204,38 +204,42 @@ const Infos = () => {
               </div>
             </section>
 
-            <h4 className={styles.section_note}>
-              &#127958; Vacances scolaires :
-            </h4>
-            <p className={styles.note_text}>
-              Sauf mention contraire, aucun cours n'a lieu durant les vacances
-              scolaires.
-            </p>
-            <h4 className={styles.section_note}>
-              &#129355; Note sur l'équipement :
-            </h4>
-            <p className={styles.note_text}>
-              L'achat de dobok (tenue traditionnelle) ou d'équipements de
-              protection n'est pas nécessaire pour débuter la pratique du
-              Taekwondo. <b>Une tenue de sport</b> appropriée suffit !
-            </p>
+            <section className={styles.section_note}>
+              <div className={styles.note_container}>
+                <img src="" alt="" className={styles.note_icon} />
+                <h4 className={styles.note_title}>
+                  <span>&#127958;</span> Vacances scolaires
+                </h4>
+                <p className={styles.note_text}>
+                  Pour permettre le repos de tous, et sauf mention contraire
+                  annoncée lors des entraînements, aucun cours n'a lieu durant
+                  les vacances scolaires.
+                </p>
+              </div>
+              <div className={styles.note_container}>
+                <h4 className={styles.note_title}>
+                  <span>&#129355;</span> Note sur l'équipement
+                </h4>
+                <p className={styles.note_text}>
+                  L'achat de dobok (tenue traditionnelle) ou d'équipements de
+                  protection n'est pas nécessaire pour débuter la pratique du
+                  Taekwondo. <b>Une tenue de sport</b> appropriée suffit !
+                </p>
 
-            <p className={styles.note_text}>
-              De plus, nous organisons en début de saison des commandes groupées
-              avec notre fournisseur pour équiper ceux qui le souhaitent tout en
-              bénéficiant de réductions. Si vous êtes intéressé, n'hésitez pas à
-              nous en parler !
-            </p>
+                <p className={styles.note_text}>
+                  De plus, nous organisons en début de saison des commandes
+                  groupées avec notre fournisseur pour équiper ceux qui le
+                  souhaitent tout en bénéficiant de réductions. Si vous êtes
+                  intéressé, n'hésitez pas à nous en parler !
+                </p>
+              </div>
+            </section>
           </section>
 
           <div className={styles.bg_wrapper}>
             <section className={styles.article_section}>
               <h2 className={styles.section_title}>
-                <img
-                  src="/icons/location_on_black_24dp.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
+                <img src="/icons/location.svg" alt="" aria-hidden="true" />
                 Nous trouver
               </h2>
               <p className={styles.location_text}>
