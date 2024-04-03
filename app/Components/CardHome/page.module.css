@@ -9,7 +9,7 @@
 }
 
 .card_container:hover {
-  scale: 1.01;
+  box-shadow: var(--box-shadow-basic);
 }
 
 .card_image {
@@ -31,5 +31,11 @@
 @media all and (min-width: 768px) {
   .card_container {
     width: 30%;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .card_container {
+    width: 18%;
   }
 }

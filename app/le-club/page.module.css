@@ -1,7 +1,7 @@
 .main_image,
 .section_title,
 .section_text {
-  margin-bottom: var(--16px);
+  margin-bottom: var(--margin-bottom-small);
 }
 
 .main_header {
@@ -9,7 +9,7 @@
     url("../../public/images/AICover.jpeg");
   background-size: cover;
   background-position: center;
-  margin-bottom: var(--16px);
+  margin-bottom: var(--margin-bottom-small);
   height: 15rem;
   position: relative;
 }
@@ -19,7 +19,8 @@
   font-size: var(--40px);
   font-weight: 300;
   text-shadow: 2px 2px 20px rgb(20, 26, 51, 0.3);
-  margin-bottom: var(--16px);
+  margin-bottom: var(--margin-bottom-small);
+  margin-left: -0.45rem;
   padding: 0 var(--24px) 0 var(--24px);
   position: absolute;
   bottom: 0;
@@ -27,8 +28,9 @@
 
 .article_section {
   line-height: 1.75;
-  margin-bottom: 3rem;
+  margin-bottom: var(--margin-bottom-large);
   padding: 0 var(--24px) 0 var(--24px);
+  display: flow-root;
 }
 
 .section_title {
@@ -38,7 +40,9 @@
 
 .section_image {
   border-radius: var(--border-radius);
-  margin-bottom: var(--16px);
+  float: left;
+  margin-right: 1rem;
+  max-height: 20rem;
 }
 
 .board_container {
@@ -99,10 +103,41 @@
     font-size: var(--24px);
     font-weight: 900;
   }
+
+  .section_container {
+    flex-direction: row;
+  }
+
+  .board_wrapper {
+    margin: 0 var(--24px) 0 var(--24px);
+  }
 }
 
 @media all and (min-width: 1024px) {
   .main_title {
     font-size: 5rem;
+  }
+
+  .board_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--16px);
+    justify-content: space-between;
+    margin: 0 var(--24px) 0 var(--24px);
+  }
+
+  .board_container {
+    width: 30%;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .main_title,
+  .article_section {
+    padding: 0 var(--64px) 0 var(--64px);
+  }
+
+  .article_section:not(:first-child) {
+    margin-bottom: var(--64px);
   }
 }

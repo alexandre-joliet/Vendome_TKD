@@ -205,14 +205,14 @@ const Infos = () => {
             </section>
 
             <h4 className={styles.section_note}>
-              &#128161; Vacances scolaires :
+              &#127958; Vacances scolaires :
             </h4>
             <p className={styles.note_text}>
-              Sauf mention contraire du professeur, aucun cours n'a lieu durant
-              les vacances scolaires.
+              Sauf mention contraire, aucun cours n'a lieu durant les vacances
+              scolaires.
             </p>
             <h4 className={styles.section_note}>
-              &#128161; Note sur l'équipement :
+              &#129355; Note sur l'équipement :
             </h4>
             <p className={styles.note_text}>
               L'achat de dobok (tenue traditionnelle) ou d'équipements de
