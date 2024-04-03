@@ -6,7 +6,7 @@
   position: absolute;
   z-index: 1;
   width: 100%;
-  max-width: var(--max-width);
+  /* max-width: var(--max-width); */
 }
 
 .header_logo {
@@ -34,5 +34,15 @@
 @media all and (min-width: 768px) {
   .header {
     padding: var(--24px) var(--48px);
+  }
+
+  .header_logo {
+    width: 72px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .header_logo {
+    width: 96px;
   }
 }
