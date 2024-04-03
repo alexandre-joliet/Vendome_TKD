@@ -15,17 +15,18 @@ const Home = () => {
             Taekwondo Club
           </h1>
         </section>
-        <article className={styles.intro_article}>
-          <p className={styles.intro_text}>
-            Situé au cœur de la ville de Vendôme, dans le département du
-            Loir-et-Cher (41), notre club offre un environnement dynamique et
-            inclusif pour les pratiquants de tous âges et de tous niveaux. Que
-            vous soyez un débutant curieux ou un expert chevronné, tout est mis
-            en oeuvre pour vous guider à travers chaque étape de votre voyage
-            dans ce noble art martial coréen.
-          </p>
+        <div className={styles.global_wrapper}>
+          <article className={styles.intro_article}>
+            <p className={styles.intro_text}>
+              Situé au cœur de la ville de Vendôme, dans le département du
+              Loir-et-Cher (41), notre club offre un environnement dynamique
+              pour tous les pratiquants. Que vous soyez un débutant curieux ou
+              un expert chevronné, tout est mis en oeuvre pour vous guider à
+              travers chaque étape de votre voyage dans ce noble art martial
+              coréen.
+            </p>
 
-          <p className={styles.intro_text}>
+            {/* <p className={styles.intro_text}>
             Au-delà de l'apprentissage des techniques de coups de pieds et de
             coups de poings, nous nous engageons à promouvoir des valeurs telles
             que le respect, la persévérance et l'esprit d'équipe. Nos cours sont
@@ -33,63 +34,122 @@ const Home = () => {
             de nos membres, les aidant ainsi à atteindre leurs objectifs, qu'il
             s'agisse de remise en forme, de compétition ou simplement de
             plaisir.
-          </p>
+          </p> */}
 
-          <p className={styles.intro_text}>
-            Rejoignez-nous au Taekwondo Club de Vendôme et découvrez non
-            seulement les enseignements du Taekwondo, mais aussi une communauté
-            chaleureuse et solidaire prête à vous accueillir les bras ouverts.
-            Que vous cherchiez à améliorer votre forme physique, à acquérir des
-            compétences d'autodéfense ou à vous immerger dans la riche culture
-            du Taekwondo, vous trouverez tout cela et bien plus encore parmi
-            nous.
-          </p>
+            <section>
+              <h2 className={styles.section_title}>Nos valeurs</h2>
+              <div className={styles.intro_values}>
+                <div className={styles.value_card}>
+                  <img
+                    src="/icons/inclusive.svg"
+                    alt=""
+                    className={styles.value_icon}
+                  />
+                  <p className={styles.value_title}>Inclusivité</p>
+                  <p className={styles.value_text}>
+                    Notre club offre un environnement dynamique et inclusif pour
+                    les pratiquants de tous âges, de tous niveaux et de tous
+                    horizons.
+                  </p>
+                </div>
+                <div className={styles.value_card}>
+                  <img
+                    src="/icons/respect.svg"
+                    alt=""
+                    className={styles.value_icon}
+                  />
+                  <p className={styles.value_title}>Respect</p>
+                  <p className={styles.value_text}>
+                    Nous sommes avant tout là pour apprendre, quelque soit notre
+                    niveau. Respect et bienveillance sont donc les maîtres mots
+                    de notre enseignement.
+                  </p>
+                </div>
+                <div className={styles.value_card}>
+                  <img
+                    src="/icons/excellence.svg"
+                    alt=""
+                    className={styles.value_icon}
+                  />
+                  <p className={styles.value_title}>Persévérance</p>
+                  <p className={styles.value_text}>
+                    Nos cours sont conçus pour favoriser le développement
+                    personnel, physique et mental de nos membres, les aidant
+                    ainsi à atteindre leurs objectifs et à se dépasser.
+                  </p>
+                </div>
+                <div className={styles.value_card}>
+                  <img
+                    src="/icons/team.svg"
+                    alt=""
+                    className={styles.value_icon}
+                  />
+                  <p className={styles.value_title}>Esprit d'équipe</p>
+                  <p className={styles.value_text}>
+                    Rejoignez une communauté chaleureuse et solidaire prête à
+                    vous accueillir les bras ouverts dans une ambiance
+                    conviviale.
+                  </p>
+                </div>
+              </div>
+            </section>
 
-          <p className={styles.intro_text}>A bientôt &#129355; !</p>
-        </article>
+            <p className={styles.intro_text}>
+              Rejoignez-nous au Taekwondo Club de Vendôme ! Que vous cherchiez à
+              améliorer votre forme physique, à acquérir des compétences
+              d'autodéfense ou à vous immerger dans la riche culture du
+              Taekwondo, vous trouverez tout cela et bien plus encore parmi
+              nous.
+            </p>
 
-        <div className={styles.bg_wrapper}>
-          <div className={styles.cards_container}>
-            <CardHome
-              CardProps={{
-                image: "/images/AICover.jpeg",
-                alt: "alt",
-                title: "Découvrir le club",
-                url: "/le-club",
-              }}
-            />
-            <CardHome
-              CardProps={{
-                image: "/images/infos.jpg",
-                alt: "alt",
-                title: "Informations pratiques",
-                url: "/infos",
-              }}
-            />
-            <CardHome
-              CardProps={{
-                image: "/images/tkd.jpg",
-                alt: "alt",
-                title: "Découvrir le Taekwondo",
-                url: "/le-teakwondo",
-              }}
-            />
-            <CardHome
-              CardProps={{
-                image: "/images/lexique.jpg",
-                alt: "alt",
-                title: "Lexique et poomsaes",
-                url: "/lexique-poomsaes",
-              }}
-            />
-            <CardHome
-              CardProps={{
-                image: "/images/contact.jpg",
-                alt: "alt",
-                title: "Nous contacter",
-                url: "/contact",
-              }}
-            />
+            <p className={styles.intro_text}>
+              <b>A bientôt</b> &#129355; !
+            </p>
+          </article>
+
+          <div className={styles.bg_wrapper}>
+            <div className={styles.cards_container}>
+              <CardHome
+                CardProps={{
+                  image: "/images/AICover.jpeg",
+                  alt: "alt",
+                  title: "Découvrir le club",
+                  url: "/le-club",
+                }}
+              />
+              <CardHome
+                CardProps={{
+                  image: "/images/infos.jpg",
+                  alt: "alt",
+                  title: "Informations pratiques",
+                  url: "/infos",
+                }}
+              />
+              <CardHome
+                CardProps={{
+                  image: "/images/tkd.jpg",
+                  alt: "alt",
+                  title: "Découvrir le Taekwondo",
+                  url: "/le-teakwondo",
+                }}
+              />
+              <CardHome
+                CardProps={{
+                  image: "/images/lexique.jpg",
+                  alt: "alt",
+                  title: "Lexique et poomsaes",
+                  url: "/lexique-poomsaes",
+                }}
+              />
+              <CardHome
+                CardProps={{
+                  image: "/images/contact.jpg",
+                  alt: "alt",
+                  title: "Nous contacter",
+                  url: "/contact",
+                }}
+              />
+            </div>
           </div>
         </div>
       </main>
