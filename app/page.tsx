@@ -106,50 +106,50 @@ const Home = () => {
               <b>A bientôt</b> &#129355; !
             </p>
           </article>
+        </div>
 
-          <div className={styles.bg_wrapper}>
-            <div className={styles.cards_container}>
-              <CardHome
-                CardProps={{
-                  image: "/images/AICover.jpeg",
-                  alt: "alt",
-                  title: "Découvrir le club",
-                  url: "/le-club",
-                }}
-              />
-              <CardHome
-                CardProps={{
-                  image: "/images/infos.jpg",
-                  alt: "alt",
-                  title: "Informations pratiques",
-                  url: "/infos",
-                }}
-              />
-              <CardHome
-                CardProps={{
-                  image: "/images/tkd.jpg",
-                  alt: "alt",
-                  title: "Découvrir le Taekwondo",
-                  url: "/le-teakwondo",
-                }}
-              />
-              <CardHome
-                CardProps={{
-                  image: "/images/lexique.jpg",
-                  alt: "alt",
-                  title: "Lexique et poomsaes",
-                  url: "/lexique-poomsaes",
-                }}
-              />
-              <CardHome
-                CardProps={{
-                  image: "/images/contact.jpg",
-                  alt: "alt",
-                  title: "Nous contacter",
-                  url: "/contact",
-                }}
-              />
-            </div>
+        <div className={styles.bg_wrapper}>
+          <div className={styles.cards_container}>
+            <CardHome
+              CardProps={{
+                image: "/images/AICover2.jpeg",
+                alt: "alt",
+                title: "S'informer sur le club",
+                url: "/le-club",
+              }}
+            />
+            <CardHome
+              CardProps={{
+                image: "/images/infos.jpg",
+                alt: "alt",
+                title: "Informations pratiques",
+                url: "/infos",
+              }}
+            />
+            <CardHome
+              CardProps={{
+                image: "/images/tkd.jpg",
+                alt: "alt",
+                title: "Découvrir le Taekwondo",
+                url: "/le-teakwondo",
+              }}
+            />
+            <CardHome
+              CardProps={{
+                image: "/images/lexique.jpg",
+                alt: "alt",
+                title: "Lexique et poomsaes",
+                url: "/lexique-poomsaes",
+              }}
+            />
+            <CardHome
+              CardProps={{
+                image: "/images/contact.jpg",
+                alt: "alt",
+                title: "Nous contacter",
+                url: "/contact",
+              }}
+            />
           </div>
         </div>
       </main>

@@ -5,7 +5,7 @@
 
 .main_header {
   background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.8)),
-    url("../public/images/AICover.jpeg");
+    url("../public/images/AICover2.jpeg");
   background-size: cover;
   background-position: center;
   margin-bottom: var(--margin-bottom-small);
@@ -60,6 +60,7 @@
 }
 
 .section_title {
+  font-size: var(--24px);
   font-weight: 900;
   margin-top: var(--margin-bottom-large);
 }
@@ -107,7 +108,9 @@
   flex-direction: column;
   gap: var(--32px);
   justify-content: center;
-  margin: 0px var(--24px) var(--margin-bottom-large) var(--24px);
+  margin: 0px auto var(--margin-bottom-large) auto;
+  padding: 0 var(--24px);
+  max-width: var(--max-width-content);
 }
 
 /** MEDIA QUERIES **/
@@ -127,6 +130,10 @@
     font-size: 4rem;
   }
 
+  .section_title {
+    font-size: var(--28px);
+  }
+
   .intro_values {
     flex-direction: row;
   }
@@ -138,7 +145,7 @@
   .cards_container {
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0px var(--48px) var(--margin-bottom-large) var(--48px);
+    padding: 0 var(--48px);
   }
 }
 
