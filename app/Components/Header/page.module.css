@@ -37,12 +37,12 @@
   }
 
   .header_logo {
-    width: 72px;
+    width: 70px;
   }
 }
 
 @media all and (min-width: 1024px) {
   .header_logo {
-    width: 96px;
+    width: 80px;
   }
 }
