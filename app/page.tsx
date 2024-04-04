@@ -17,6 +17,7 @@ const Home = () => {
         </section>
         <div className={styles.global_wrapper}>
           <article className={styles.intro_article}>
+            <p className={styles.intro_textwelcome}>Bienvenue !</p>
             <p className={styles.intro_text}>
               Situé au cœur de la ville de Vendôme, dans le département du
               Loir-et-Cher (41), notre club offre un environnement dynamique
@@ -25,17 +26,6 @@ const Home = () => {
               travers chaque étape de votre voyage dans ce noble art martial
               coréen.
             </p>
-
-            {/* <p className={styles.intro_text}>
-            Au-delà de l'apprentissage des techniques de coups de pieds et de
-            coups de poings, nous nous engageons à promouvoir des valeurs telles
-            que le respect, la persévérance et l'esprit d'équipe. Nos cours sont
-            conçus pour favoriser le développement personnel, physique et mental
-            de nos membres, les aidant ainsi à atteindre leurs objectifs, qu'il
-            s'agisse de remise en forme, de compétition ou simplement de
-            plaisir.
-          </p> */}
-
             <section>
               <h2 className={styles.section_title}>Nos valeurs</h2>
               <div className={styles.intro_values}>
