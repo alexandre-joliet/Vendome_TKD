@@ -13,11 +13,11 @@ const Contact = () => {
         </section>
         <article className={styles.main_article}>
           <section className={styles.article_section}>
+            <h2 className={styles.section_title}>Formulaire de contact</h2>
             <p className={styles.section_text}>
               Une question ? N'hésitez pas à nous contacter via le formulaire
               ci-dessous. Nous vous répondrons dès que possible !
             </p>{" "}
-            <h2 className={styles.section_title}>Formulaire de contact</h2>
             <ContactForm />
           </section>
         </article>

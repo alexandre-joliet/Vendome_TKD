@@ -7,7 +7,7 @@
 .main_image,
 .section_title,
 .section_text {
-  margin-bottom: var(--16px);
+  margin-bottom: var(--margin-bottom-small);
 }
 
 .main_header {
@@ -15,17 +15,17 @@
     url("../../public/images/contact.jpg");
   background-size: cover;
   background-position: center;
-  margin-bottom: var(--16px);
+  margin-bottom: var(--margin-bottom-large);
   height: 15rem;
   position: relative;
 }
 
 .main_title {
   color: white;
-  font-size: var(--32px);
-  font-weight: 900;
+  font-size: var(--40px);
+  font-weight: 300;
   text-shadow: 2px 2px 20px rgb(20, 26, 51, 0.3);
-  margin-bottom: var(--16px);
+  margin-bottom: var(--margin-bottom-small);
   padding: 0 var(--24px) 0 var(--24px);
   position: absolute;
   bottom: 0;
@@ -33,6 +33,51 @@
 
 .article_section {
   line-height: 1.75;
-  margin-bottom: 3rem;
+  margin: 0 auto var(--margin-bottom-large) auto;
   padding: 0 var(--24px) 0 var(--24px);
+  max-width: var(--max-width-content);
+}
+
+.section_title {
+  font-weight: 700;
+}
+
+.section_text {
+  margin-bottom: var(--margin-bottom-small);
+}
+
+/** MEDIA QUERIES **/
+@media all and (min-width: 376px) and (max-width: 767px) {
+  .main_title {
+    font-size: 3rem;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .main_title,
+  .article_section {
+    padding: 0 var(--48px) 0 var(--48px);
+  }
+
+  .main_title {
+    font-size: 4rem;
+  }
+
+  .section_title {
+    font-size: var(--28px);
+    font-weight: 900;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .main_title {
+    font-size: 5rem;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .main_title,
+  .article_section {
+    padding: 0 var(--64px) 0 var(--64px);
+  }
 }
