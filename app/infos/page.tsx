@@ -208,7 +208,7 @@ const Infos = () => {
               <div className={styles.note_container}>
                 <img src="" alt="" className={styles.note_icon} />
                 <h4 className={styles.note_title}>
-                  <span>&#127958;</span> Vacances scolaires
+                  <span>&#127969;</span> Vacances scolaires
                 </h4>
                 <p className={styles.note_text}>
                   Pour permettre le repos de tous, et sauf mention contraire
