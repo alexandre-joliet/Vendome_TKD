@@ -57,21 +57,33 @@ const CardPoomsae = ({ poomsae }: PoomsaeProps) => {
         </div>
         <div className={`${styles.content_container} ${expandClass}`}>
           <p className={styles.poomsae_description}>{poomsae.description}</p>
-          <img src={poomsae.picture} alt="" />
+          <img src={poomsae.picture} alt="" className={styles.poomsae_image} />
           <h5 className={styles.poomsae_ressources}>Ressources</h5>
-          <ul className={styles.poomsae_list}>
-            <li>
-              <span className={styles.emoji}>&#128218;</span>
-              <a href={poomsae.file_pdf} target="_blank">
-                Télécharger la fiche PDF
-              </a>
-            </li>
-            <li>
-              <span className={styles.emoji}>&#127909;</span>
-              <a href={poomsae.video} target="_blank">
-                Continuer vers la vidéo Youtube (en anglais)
-              </a>
-            </li>
+          <ul className={styles.poomsae_actions}>
+            <div className={styles.action_container}>
+              <img
+                src="/icons/description200.svg"
+                alt=""
+                className={styles.action_icon}
+              />
+              <li className={styles.action_button}>
+                <a href={poomsae.file_pdf} target="_blank">
+                  Télécharger la fiche PDF
+                </a>
+              </li>
+            </div>
+            <div className={styles.action_container}>
+              <img
+                src="/icons/video200.svg"
+                alt=""
+                className={styles.action_icon}
+              />
+              <li className={styles.action_button}>
+                <a href={poomsae.video} target="_blank">
+                  Continuer vers la vidéo Youtube (en anglais)
+                </a>
+              </li>
+            </div>
           </ul>
         </div>
       </section>

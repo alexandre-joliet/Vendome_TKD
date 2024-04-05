@@ -1,7 +1,9 @@
 .main_image,
 .section_title,
-.section_text {
-  margin-bottom: var(--16px);
+.section_subtitle,
+.section_text,
+.quote_text {
+  margin-bottom: var(--margin-bottom-small);
 }
 
 .main_header {
@@ -9,7 +11,7 @@
     url("../../public/images/lexique.webp");
   background-size: cover;
   background-position: center;
-  margin-bottom: var(--16px);
+  margin-bottom: var(--margin-bottom-large);
   height: 15rem;
   position: relative;
 }
@@ -19,7 +21,7 @@
   font-size: var(--40px);
   font-weight: 300;
   text-shadow: 2px 2px 20px rgb(20, 26, 51, 0.3);
-  margin-bottom: var(--16px);
+  margin-bottom: var(--margin-bottom-small);
   padding: 0 var(--24px) 0 var(--24px);
   position: absolute;
   bottom: 0;
@@ -27,20 +29,38 @@
 
 .main_article {
   padding: 0 var(--24px) 0 var(--24px);
+  margin: 0 auto var(--margin-bottom-large) auto;
+  max-width: var(--max-width-content);
 }
 
 .article_section {
   line-height: 1.75;
-  margin-bottom: 4rem;
+  margin-bottom: var(--margin-bottom-large);
 }
 
 .section_title {
-  font-size: var(--20px);
-  font-weight: 900;
+  font-weight: 700;
 }
 
-.section_credits {
-  font-size: var(--12px);
+.section_subtitle {
+  font-size: var(--20px);
+}
+
+.section_quote {
+  background-color: var(--background-light-wrapper);
+  border-radius: var(--border-radius);
+  font-size: var(--16px);
+  margin-bottom: var(--margin-bottom-large);
+  padding: var(--24px);
+  width: 100%;
+}
+
+.quote_icon {
+  background-color: var(--light-light-variation-deco-border);
+  border-radius: 100%;
+  box-shadow: var(--box-shadow-basic-values);
+  margin: 0 auto var(--margin-bottom-small) auto;
+  padding: 0.75rem;
 }
 
 .section_list {
@@ -48,7 +68,7 @@
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-default);
   list-style: none;
-  margin-bottom: var(--16px);
+  margin-bottom: var(--margin-bottom-small);
   padding: 0.5rem 0;
   text-align: center;
 }
@@ -79,7 +99,7 @@
   }
 
   .section_title {
-    font-size: var(--24px);
+    font-size: var(--28px);
     font-weight: 900;
   }
 }
@@ -87,5 +107,16 @@
 @media all and (min-width: 1024px) {
   .main_title {
     font-size: 5rem;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .main_title,
+  .main_article {
+    padding: 0 var(--64px) 0 var(--64px);
+  }
+
+  .main_article:not(:first-child) {
+    margin-bottom: var(--64px);
   }
 }

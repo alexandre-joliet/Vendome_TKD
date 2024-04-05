@@ -41,41 +41,61 @@ const LexiquePoomsaes = () => {
         <article className={styles.main_article}>
           <h2 className={styles.section_title}>Les poomsaes</h2>
           <section className={styles.article_section}>
-            <h3>Définition</h3>
-            <p className={styles.section_text}>
-              Le Poomsae est une pratique conventionnelle qui représente un
-              combat structuré et dirigé, effectué individuellement et qui suit
-              un schéma spécifique, en fonction de sa complexité.
-            </p>
-            <p className={styles.section_text}>
-              Chaque Poomsae a son propre tempo qui correspond aux différents
-              enchaînements, de sorte que chaque blocage soit suivi
-              instinctivement d'une contre-attaque. Il commence et se termine
-              toujours par la position "<i>Tchaliot Seugui</i>", suivie du salut
-              "<i>Kyongnye</i>", puis est annoncé à haute voix.
-            </p>
-            <p className={styles.section_text}>
-              Il est essentiel de "vivre" son Poomsae, en donnant l'impression
-              d'un vrai combat à travers une exécution précise et contrôlée des
-              mouvements. Le Poomsae est réalisé avec dignité, en portant un
-              dobok propre et une ceinture correctement attachée.
-            </p>
-            <p className={styles.section_credits}>
-              Credits texte :{" "}
-              <a href="https://www.fftda.fr/fr/105-les-poomsae.html">FFTDA</a>
-            </p>
+            <h3 className={styles.section_subtitle}>Définition</h3>
+            <blockquote
+              cite="https://www.fftda.fr/fr/105-les-poomsae.html"
+              className={styles.section_quote}
+            >
+              <img
+                src="/icons/book200.svg"
+                alt=""
+                className={styles.quote_icon}
+              />
+              <p className={styles.quote_text}>
+                Le Poomsae est une pratique conventionnelle qui représente un
+                combat structuré et dirigé, effectué individuellement et qui
+                suit un schéma spécifique, en fonction de sa complexité.
+              </p>
+              <p className={styles.quote_text}>
+                Chaque Poomsae a son propre tempo qui correspond aux différents
+                enchaînements, de sorte que chaque blocage soit suivi
+                instinctivement d'une contre-attaque. Il commence et se termine
+                toujours par la position "<i>Tchaliot Seugui</i>", suivie du
+                salut "<i>Kyongnye</i>", puis est annoncé à haute voix.
+              </p>
+              <p className={styles.quote_text}>
+                Il est essentiel de "vivre" son Poomsae, en donnant l'impression
+                d'un vrai combat à travers une exécution précise et contrôlée
+                des mouvements. Le Poomsae est réalisé avec dignité, en portant
+                un dobok propre et une ceinture correctement attachée.
+              </p>
+              <footer className={styles.quote_text}>
+                <cite>
+                  - &nbsp;
+                  <a
+                    href="https://www.fftda.fr/fr/105-les-poomsae.html"
+                    target="_blank"
+                  >
+                    FFTDA
+                  </a>
+                </cite>
+              </footer>
+            </blockquote>
           </section>
 
           <section className={styles.article_section}>
-            <h3>Signification et exécution des poomsaes</h3>
-
-            {PoomsaeList.map((item) => (
-              <CardPoomsae key={item.id} poomsae={item} />
-            ))}
+            <h3 className={styles.section_subtitle}>
+              Signification et exécution des poomsaes
+            </h3>
+            <div className={styles.poomsaes_container}>
+              {PoomsaeList.map((item) => (
+                <CardPoomsae key={item.id} poomsae={item} />
+              ))}
+            </div>
           </section>
 
           <section className={styles.article_section}>
-            <h3>Critères d'exécution</h3>
+            <h3 className={styles.section_subtitle}>Critères d'exécution</h3>
             <p className={styles.section_text}>
               Les critères d'exécution des poomsaes sont :
             </p>
@@ -89,7 +109,7 @@ const LexiquePoomsaes = () => {
                 L'Equilibre et la Stabilité
               </li>
               <li className={styles.section_list}>
-                Le Respect des techniques et du diagramme
+                Le Respect des techniques et du schéma
               </li>
               <li className={styles.section_list}>La Respiration</li>
               <li className={styles.section_list}>La Concentration</li>
