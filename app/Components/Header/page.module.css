@@ -46,3 +46,9 @@
     width: 80px;
   }
 }
+
+@media all and (min-width: 1440px) {
+  .header {
+    padding: var(--24px) var(--64px);
+  }
+}
