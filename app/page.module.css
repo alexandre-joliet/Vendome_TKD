@@ -7,7 +7,7 @@
   background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.8)),
     url("../public/images/AICover2.jpeg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   margin-bottom: var(--margin-bottom-small);
   height: 100vh;
   position: relative;
@@ -164,6 +164,7 @@
 @media all and (min-width: 1024px) and (min-height: 768px) {
   .main_header {
     height: 50vh;
+    background-position-y: 85%;
   }
 
   .main_title {
@@ -181,6 +182,10 @@
 }
 
 @media all and (min-width: 1440px) and (min-height: 768px) {
+  .main_header {
+    background-position-y: 75%;
+  }
+
   .main_title {
     font-size: 5rem;
     padding: 0 var(--64px) 0 var(--64px);
