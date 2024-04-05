@@ -317,3 +317,14 @@
     max-width: 30%;
   }
 }
+
+@media all and (min-width: 1440px) {
+  .main_title,
+  .article_section {
+    padding: 0 var(--64px) 0 var(--64px);
+  }
+
+  .article_section:not(:first-child) {
+    margin-bottom: var(--64px);
+  }
+}
