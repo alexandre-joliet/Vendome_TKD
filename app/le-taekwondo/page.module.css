@@ -7,7 +7,7 @@
 
 .main_header {
   background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.8)),
-    url("../../public/images/tkd.jpg");
+    url("../../public/images/tkd.webp");
   background-size: cover;
   background-position: center;
   margin-bottom: var(--margin-bottom-large);
@@ -87,17 +87,17 @@
 
 .card_header_poomsae {
   background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.8)),
-    url("../../public/images/TKDPoomsae.jpg");
+    url("../../public/images/le-taekwondo/TKDPoomsae.webp");
 }
 
 .card_header_combat {
   background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.8)),
-    url("../../public/images/TKDCombat.jpg");
+    url("../../public/images/le-taekwondo/TKDCombat.webp");
 }
 
 .card_header_hoshinsoul {
   background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.8)),
-    url("../../public/images/TKDHo.jpg");
+    url("../../public/images/le-taekwondo/TKDHo.webp");
 }
 
 .card_title {

@@ -110,7 +110,7 @@ const Home = () => {
             />
             <CardHome
               CardProps={{
-                image: "/images/infos.jpg",
+                image: "/images/infos.webp",
                 alt: "alt",
                 title: "Informations pratiques",
                 url: "/infos",
@@ -118,7 +118,7 @@ const Home = () => {
             />
             <CardHome
               CardProps={{
-                image: "/images/tkd.jpg",
+                image: "/images/tkd.webp",
                 alt: "alt",
                 title: "Découvrir le Taekwondo",
                 url: "/le-teakwondo",
@@ -126,7 +126,7 @@ const Home = () => {
             />
             <CardHome
               CardProps={{
-                image: "/images/lexique.jpg",
+                image: "/images/lexique.webp",
                 alt: "alt",
                 title: "Lexique et poomsaes",
                 url: "/lexique-poomsaes",
@@ -134,7 +134,7 @@ const Home = () => {
             />
             <CardHome
               CardProps={{
-                image: "/images/contact.jpg",
+                image: "/images/contact.webp",
                 alt: "alt",
                 title: "Nous contacter",
                 url: "/contact",

@@ -5,7 +5,7 @@
 
 .main_header {
   background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.8)),
-    url("../../public/images/infos.jpg");
+    url("../../public/images/infos.webp");
   background-size: cover;
   background-position: center;
   margin-bottom: var(--margin-bottom-large);

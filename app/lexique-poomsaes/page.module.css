@@ -6,7 +6,7 @@
 
 .main_header {
   background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.8)),
-    url("../../public/images/lexique.jpg");
+    url("../../public/images/lexique.webp");
   background-size: cover;
   background-position: center;
   margin-bottom: var(--16px);

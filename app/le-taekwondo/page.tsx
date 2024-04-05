@@ -41,7 +41,7 @@ const LeTaekwondo = () => {
             <div className={styles.section_subcontainer}>
               <figure className={styles.figure_left}>
                 <img
-                  src="/images/TKDH-H copie.webp"
+                  src="/images/le-taekwondo/TKDH-H copie.webp"
                   alt="Photographie d'une vieille estampe montrant deux personnages s'affrontant au milieu de la foule"
                   className={styles.section_image}
                 />
@@ -70,7 +70,7 @@ const LeTaekwondo = () => {
             <div className={styles.section_subcontainer}>
               <figure className={styles.figure_right}>
                 <img
-                  src="/images/TKDH-Choi copie.webp"
+                  src="/images/le-taekwondo/TKDH-Choi copie.webp"
                   alt="Photographie d'époque montrant 2 pratiquants de Taekwondo effectuant un coup de pied latéral bloqués par un troisième personnage central"
                   className={styles.section_image}
                 />
@@ -123,7 +123,7 @@ const LeTaekwondo = () => {
             </div>
             <figure className={styles.figure_center}>
               <img
-                src="/images/TKDH-M copie.webp"
+                src="/images/le-taekwondo/TKDH-M copie.webp"
                 alt="Photographie moderne montrant deux combattants lors des JO de 2016.3 L'un des combattants porte un coup de pied retourné à la tête de son adversaire"
                 className={styles.section_image}
               />
