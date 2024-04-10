@@ -2,6 +2,7 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import styles from "./page.module.css";
 import Joi from "joi";
+import Spinner from "../Spinner/Spinner";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -10,6 +11,7 @@ const ContactForm = () => {
   const [honeyMail, setHoneyMail] = useState("");
   const [validationModal, setValidationModal] = useState(false);
   const [formErrorMessage, setFormErrorMessage] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   //* VALIDATIONS
   const [nameNotificationError, setNameNotificationError] = useState(false);
@@ -89,6 +91,7 @@ const ContactForm = () => {
     }
 
     try {
+      setIsLoading(true);
       const response = await fetch("/api/contact", {
         method: "POST",
         body: JSON.stringify({
@@ -105,6 +108,7 @@ const ContactForm = () => {
         console.log("falling over");
         throw new Error(`response status: ${response.status}`);
       }
+      setIsLoading(false);
       setValidationModal(true);
       setName("");
       setEmail("");
@@ -113,6 +117,7 @@ const ContactForm = () => {
       // console.log(responseData);
     } catch (error: any) {
       console.error("Error:", error);
+      setIsLoading(false);
       setFormErrorMessage(true);
     }
   };
@@ -202,6 +207,7 @@ const ContactForm = () => {
           </div>
         )}
       </form>
+      {isLoading && <Spinner />}
       {validationModal && (
         <div className={styles.modal_bg}>
           <dialog open className={styles.modal}>

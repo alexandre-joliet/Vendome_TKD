@@ -1,0 +1,41 @@
+.spinner_bg {
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(5px);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: fixed;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(
+    circle,
+    rgba(218, 222, 242, 1) 0%,
+    rgba(178, 182, 205, 1) 35%,
+    rgba(135, 140, 168, 1) 100%
+  );
+  border-radius: var(--border-radius);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  animation: rotatePlane 1.5s infinite ease-in-out;
+}
+
+@keyframes rotatePlane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
