@@ -123,6 +123,10 @@
     font-size: 5rem;
   }
 
+  .main_header {
+    height: 25rem;
+  }
+
   .board_wrapper {
     display: flex;
     flex-wrap: wrap;

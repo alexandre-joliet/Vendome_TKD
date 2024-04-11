@@ -293,6 +293,10 @@
 }
 
 @media all and (min-width: 900px) {
+  .main_header {
+    height: 25rem;
+  }
+
   .cards_container {
     justify-content: center;
     width: 100%;

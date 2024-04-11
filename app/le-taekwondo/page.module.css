@@ -192,6 +192,10 @@
     font-size: 5rem;
   }
 
+  .main_header {
+    height: 25rem;
+  }
+
   .card_container {
     max-width: 30%;
   }
