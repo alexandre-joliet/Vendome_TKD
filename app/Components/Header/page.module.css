@@ -37,18 +37,24 @@
   }
 
   .header_logo {
-    width: 70px;
+    width: 58px;
   }
 }
 
 @media all and (min-width: 1024px) {
+  .header {
+    background-color: var(--light-darkest-variation-title);
+    justify-content: space-between;
+    padding: var(--16px) var(--48px);
+  }
+
   .header_logo {
-    width: 80px;
+    width: 68px;
   }
 }
 
 @media all and (min-width: 1440px) {
   .header {
-    padding: var(--24px) var(--64px);
+    padding: var(--16px) var(--64px);
   }
 }
