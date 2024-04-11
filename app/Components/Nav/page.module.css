@@ -8,7 +8,7 @@
   box-shadow: 2px 2px 20px 1px rgba(212, 212, 212, 0.5);
   display: flex;
   flex-direction: column;
-  padding: 100px var(--48px);
+  padding: 8rem var(--24px);
   max-width: 80%;
   height: 100vh;
   position: fixed;
@@ -124,6 +124,12 @@
 .nav_items:hover::after {
   opacity: 1;
   transform: translate3d(0, 0.25rem, 0);
+}
+
+@media all and (min-width: 768px) {
+  .nav_container {
+    padding: 8rem var(--48px);
+  }
 }
 
 @media all and (min-width: 1024px) {
