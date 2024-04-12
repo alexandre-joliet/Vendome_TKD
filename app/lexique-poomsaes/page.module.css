@@ -1,8 +1,10 @@
 .main_image,
+.main_title,
 .section_title,
-.section_subtitle,
 .section_text,
-.quote_text {
+.quote_text,
+.criterias_container,
+.quote_footer {
   margin-bottom: var(--margin-bottom-small);
 }
 
@@ -21,7 +23,6 @@
   font-size: var(--40px);
   font-weight: 300;
   text-shadow: 2px 2px 20px rgb(20, 26, 51, 0.3);
-  margin-bottom: var(--margin-bottom-small);
   padding: 0 var(--24px) 0 var(--24px);
   position: absolute;
   bottom: 0;
@@ -42,10 +43,6 @@
   font-weight: 700;
 }
 
-.section_subtitle {
-  font-size: var(--20px);
-}
-
 .section_quote {
   background-color: var(--background-light-wrapper);
   border-radius: var(--border-radius);
@@ -63,14 +60,20 @@
   padding: 0.75rem;
 }
 
-.section_list {
-  background-color: var(--light-light-variation-deco-border);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow-default);
-  list-style: none;
-  margin-bottom: var(--margin-bottom-small);
-  padding: 0.5rem 0;
-  text-align: center;
+.quote_subtitle {
+  font-size: var(--20px);
+}
+
+.section_quote .quote_subtitle:not(:first-of-type) {
+  margin-top: var(--24px);
+}
+
+.criterias_container {
+  padding-left: var(--24px);
+}
+
+.criteria {
+  list-style: circle;
 }
 
 .bg_wrapper {
@@ -107,6 +110,10 @@
 @media all and (min-width: 1024px) {
   .main_title {
     font-size: 5rem;
+  }
+
+  .main_header {
+    height: 25rem;
   }
 }
 

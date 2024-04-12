@@ -41,7 +41,6 @@ const LexiquePoomsaes = () => {
         <article className={styles.main_article}>
           <h2 className={styles.section_title}>Les poomsaes</h2>
           <section className={styles.article_section}>
-            <h3 className={styles.section_subtitle}>Définition</h3>
             <blockquote
               cite="https://www.fftda.fr/fr/105-les-poomsae.html"
               className={styles.section_quote}
@@ -51,6 +50,7 @@ const LexiquePoomsaes = () => {
                 alt=""
                 className={styles.quote_icon}
               />
+              <h3 className={styles.quote_subtitle}>Définition</h3>
               <p className={styles.quote_text}>
                 Le Poomsae est une pratique conventionnelle qui représente un
                 combat structuré et dirigé, effectué individuellement et qui
@@ -69,6 +69,24 @@ const LexiquePoomsaes = () => {
                 des mouvements. Le Poomsae est réalisé avec dignité, en portant
                 un dobok propre et une ceinture correctement attachée.
               </p>
+              <h3 className={styles.quote_subtitle}>Critères d'exécution</h3>
+              <p className={styles.quote_text}>
+                Les critères d'exécution des poomsaes sont les suivants :
+              </p>
+
+              <ul className={styles.criterias_container}>
+                <li className={styles.criteria}>La Maîtrise</li>
+                <li className={styles.criteria}>La Puissance</li>
+                <li className={styles.criteria}>Le Rythme</li>
+
+                <li className={styles.criteria}>L'Equilibre et la Stabilité</li>
+                <li className={styles.criteria}>
+                  Le Respect des techniques et du schéma
+                </li>
+                <li className={styles.criteria}>La Respiration</li>
+                <li className={styles.criteria}>La Concentration</li>
+                <li className={styles.criteria}>Le Regard </li>
+              </ul>
               <footer className={styles.quote_text}>
                 <cite>
                   - &nbsp;
@@ -92,29 +110,6 @@ const LexiquePoomsaes = () => {
                 <CardPoomsae key={item.id} poomsae={item} />
               ))}
             </div>
-          </section>
-
-          <section className={styles.article_section}>
-            <h3 className={styles.section_subtitle}>Critères d'exécution</h3>
-            <p className={styles.section_text}>
-              Les critères d'exécution des poomsaes sont :
-            </p>
-
-            <ul>
-              <li className={styles.section_list}>La Maîtrise</li>
-              <li className={styles.section_list}>La Puissance</li>
-              <li className={styles.section_list}>Le Rythme</li>
-
-              <li className={styles.section_list}>
-                L'Equilibre et la Stabilité
-              </li>
-              <li className={styles.section_list}>
-                Le Respect des techniques et du schéma
-              </li>
-              <li className={styles.section_list}>La Respiration</li>
-              <li className={styles.section_list}>La Concentration</li>
-              <li className={styles.section_list}>Le Regard </li>
-            </ul>
           </section>
         </article>
       </main>
