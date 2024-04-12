@@ -33,17 +33,13 @@
   border: none;
   outline: none;
   padding: 1rem 0;
-  /* position: fixed;
-  top: 36px;
-  left: var(--48px); */
   transition: all ease-in-out 500ms;
   z-index: 99;
 }
 
 .open_nav .nav_button {
   position: fixed;
-  top: 37px;
-  /* left: var(--48px); */
+  top: 18px;
 }
 
 .button_bar,
@@ -136,6 +132,12 @@
 @media all and (min-width: 768px) {
   .nav_container {
     padding: 10rem var(--48px);
+  }
+
+  .open_nav .nav_button {
+    position: fixed;
+    top: 37px;
+    /* left: var(--48px); */
   }
 }
 
