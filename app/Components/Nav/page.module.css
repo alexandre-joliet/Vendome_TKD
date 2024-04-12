@@ -14,6 +14,7 @@
   position: fixed;
   left: -100vw;
   bottom: 0;
+  overflow: hidden;
   transition: all 500ms ease-in-out;
   visibility: hidden;
 }
@@ -32,11 +33,17 @@
   border: none;
   outline: none;
   padding: 1rem 0;
-  /* position: absolute;
+  /* position: fixed;
   top: 36px;
   left: var(--48px); */
   transition: all ease-in-out 500ms;
   z-index: 99;
+}
+
+.open_nav .nav_button {
+  position: fixed;
+  top: 37px;
+  /* left: var(--48px); */
 }
 
 .button_bar,
@@ -128,7 +135,7 @@
 
 @media all and (min-width: 768px) {
   .nav_container {
-    padding: 8rem var(--48px);
+    padding: 10rem var(--48px);
   }
 }
 
