@@ -49,6 +49,7 @@
 }
 
 .intro_article {
+  border-radius: var(--border-radius);
   padding: 0 var(--24px) 0 var(--24px);
   margin-bottom: var(--margin-bottom-large);
   margin-top: var(--margin-bottom-large);
@@ -78,7 +79,7 @@
   flex-wrap: wrap;
   gap: var(--24px);
   justify-content: space-evenly;
-  margin: var(--margin-bottom-small) 0 var(--margin-bottom-large) 0;
+  margin: var(--margin-bottom-small) 0 0 0;
 }
 
 .value_card {
