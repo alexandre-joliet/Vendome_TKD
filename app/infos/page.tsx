@@ -75,7 +75,7 @@ const Infos = () => {
                         <td>
                           <span>&#11088;</span>Licence FFTDA (obligatoire)
                         </td>
-                        <td className={styles.extra_price}>+35€</td>
+                        <td className={styles.extra_price}>+36€</td>
                       </tr>
                       <tr>
                         <td>
@@ -115,7 +115,7 @@ const Infos = () => {
                         <td>
                           <span>&#11088;</span>Licence FFTDA (obligatoire)
                         </td>
-                        <td className={styles.extra_price}>+35€</td>
+                        <td className={styles.extra_price}>+36€</td>
                       </tr>
                       <tr>
                         <td>
@@ -153,7 +153,7 @@ const Infos = () => {
                         <td>
                           <span>&#11088;</span>Licence FFTDA (obligatoire)
                         </td>
-                        <td className={styles.extra_price}>+35€</td>
+                        <td className={styles.extra_price}>+36€</td>
                       </tr>
                       <tr>
                         <td>
