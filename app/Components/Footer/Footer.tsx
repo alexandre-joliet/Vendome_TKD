@@ -6,7 +6,7 @@ const Footer = () => {
       <div className={styles.infos_container}>
         <p className={styles.infos_title}>Vendôme Taekwondo Club</p>
         <p className={styles.infos_address}>
-          2 Rue Jacques Offenbach, 41100 Vendôme
+          6 Rue Geoffroy Martel, 41100 Vendôme
         </p>
       </div>
       <a
