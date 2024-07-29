@@ -33,9 +33,14 @@
   max-width: var(--max-width-content);
 }
 
-.section_title {
+.section_title,
+.section_subtitle {
   /* font-size: var(--20px); */
   font-weight: 700;
+}
+
+.section_subtitle {
+  font-size: var(--18px);
 }
 
 .section_image {
@@ -73,6 +78,11 @@
 .board_name {
   font-size: var(--18px);
   font-weight: 700;
+}
+
+.section_highlight {
+  border-left: 4px solid var(--light-highlight-color);
+  padding-left: var(--16px);
 }
 
 .bg_wrapper {

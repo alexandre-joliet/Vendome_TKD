@@ -26,7 +26,6 @@ const LeClub = () => {
               beatae rem?
             </p>
           </section>
-
           <section className={styles.article_section}>
             <h2 className={styles.section_title}>Notre maître</h2>
             <div className={styles.section_container}>
@@ -54,8 +53,7 @@ const LeClub = () => {
               </p>
             </div>
           </section>
-
-          <div className={styles.bg_wrapper}>
+          {/* <div className={styles.bg_wrapper}>
             <section className={styles.article_section}>
               <h2 className={styles.section_title}>Présentation du bureau</h2>
 
@@ -123,8 +121,15 @@ const LeClub = () => {
                   </div>
                 </div>
               </div>
+
+              <div className={styles.section_highlight}>
+                <p className={styles.section_subtitle}>Adresse du bureau :</p>
+                <p className={styles.section_text}>
+                  2 Rue Jacques Offenbach, 41100 Vendôme
+                </p>
+              </div>
             </section>
-          </div>
+          </div> */}
         </article>
       </main>
       <Footer />
