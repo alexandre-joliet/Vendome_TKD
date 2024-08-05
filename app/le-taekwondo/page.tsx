@@ -1,6 +1,10 @@
+import Link from "next/link";
+import Image from "next/image";
 import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
 import styles from "./page.module.css";
+import LogoFFTDA from "../../public/images/le-taekwondo/FFTDA.png";
+import LogoLigue from "../../public/images/le-taekwondo/LigueCVL.jpg";
 
 const LeTaekwondo = () => {
   return (
@@ -90,7 +94,12 @@ const LeTaekwondo = () => {
                 World Taekwondo Federation (renommée WT depuis peu). Cette
                 division marque le début d'une évolution divergente entre les
                 deux organisations, avec des variations dans les règles, les
-                techniques et les compétitions. <br /> <br />
+                techniques et les compétitions.
+              </p>
+              <p
+                className={`${styles.section_text} ${styles.section_highlight}`}
+              >
+                {" "}
                 &#128161; <b>NB : </b>Dans notre club, nous enseignons le
                 Taekwondo WT.
               </p>
@@ -129,16 +138,52 @@ const LeTaekwondo = () => {
               />
               <figcaption className={styles.img_caption}>
                 Deux combattants lors des JO de 2016 - <br />
-                <a href="https://commons.wikimedia.org/wiki/File:Milad_Kharchegani_at_the_2016_Summer_Olympics.jpg">
+                <Link href="https://commons.wikimedia.org/wiki/File:Milad_Kharchegani_at_the_2016_Summer_Olympics.jpg">
                   Tasnim News Agency
-                </a>
+                </Link>
                 ,{" "}
-                <a href="https://creativecommons.org/licenses/by/4.0">
+                <Link href="https://creativecommons.org/licenses/by/4.0">
                   CC BY 4.0
-                </a>
+                </Link>
                 , via Wikimedia Commons
               </figcaption>
             </figure>
+          </section>
+
+          <section className={styles.article_section}>
+            <h2 className={styles.section_title}>Liens utiles</h2>
+            <ul className={styles.section_list}>
+              <li className={styles.section_listitem}>
+                <Link
+                  href="https://www.fftda.fr/"
+                  target="_blank"
+                  className={styles.section_listitemcontent}
+                >
+                  <Image
+                    src={LogoFFTDA}
+                    width={96}
+                    height={96}
+                    alt="Logo de la FFTDA"
+                  ></Image>
+                  Fédération Française de Taekwondo et Disciplines Associées
+                </Link>
+              </li>
+              <li className={styles.section_listitem}>
+                <Link
+                  href="https://www.facebook.com/LigueCVLTKD/"
+                  target="_blank"
+                  className={styles.section_listitemcontent}
+                >
+                  <Image
+                    src={LogoLigue}
+                    width={96}
+                    height={96}
+                    alt="Logo de la FFTDA"
+                  ></Image>
+                  Ligue Centre Val de Loire d'Arbitrage de Taekwondo
+                </Link>
+              </li>
+            </ul>
           </section>
 
           <div className={styles.bg_wrapper}>
