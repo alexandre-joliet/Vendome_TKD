@@ -34,13 +34,13 @@ const Infos = () => {
           <h1 className={styles.main_title}>Informations pratiques</h1>
         </section>
         <article className={styles.main_article}>
-          <section className={styles.article_section}>
+          {/* <section className={styles.article_section}>
             <p className={styles.section_text}>
               Vous trouverez ci-dessous toutes les informations concernant les
               horaires d'entraînement, les tarifs pour la saison{" "}
               <b>2023/2024</b> et l'adresse de notre Dojang.
             </p>
-          </section>
+          </section> */}
 
           <section className={styles.article_section}>
             <h2 className={styles.section_title}>
