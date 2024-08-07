@@ -34,7 +34,7 @@ export async function POST (
     //* CONNECTION TEST
     // const testConnexion = await transporter.verify(function (error: any, success: any) {
     //   if (error) {
-    //     console.log(error);
+    //     console.log("Ouuuups:", error);
     //   } else {
     //     console.log("Server is ready to take our messages");
     //   }
@@ -45,7 +45,7 @@ export async function POST (
       to: `${myMail}`,
       replyTo: `${cleanReceivedEmail}`,
       // cc: `${data.mail}`,
-      subject: "Demande d'informations",
+      subject: "Formulaire de contact TKD Club - Demande d'informations",
       html: `
       <h2>Formulaire de contact Vendôme Taekwondo Club</h2>
       <hr style="border: 0;
