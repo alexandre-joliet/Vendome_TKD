@@ -172,6 +172,7 @@
 @media all and (max-width: 550px) {
   .section_list {
     flex-direction: column;
+    align-items: center;
     gap: var(--32px);
   }
 }
