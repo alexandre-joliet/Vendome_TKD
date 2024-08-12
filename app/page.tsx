@@ -2,9 +2,39 @@
 import CardHome from "./Components/CardHome/CardHome";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
+import NewsCard from "./Components/NewsCard/NewsCard";
 import styles from "./page.module.css";
+import buttonArrow from "../public/icons/expand_more_white_24dp.svg";
+import { useRef, useState } from "react";
+import articles from "../public/articles/articles";
+
+const NEWS_WIDTH = 332;
 
 const Home = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const newsContainer = useRef<HTMLDivElement>(null);
+
+  const handleScroll = (scrollAmount: number) => {
+    // let newsContainer = document.getElementById("newsContainer");
+    // if (newsContainer) {
+    //   newsContainer.scrollLeft = newsContainer.scrollLeft + 350;
+    // }
+
+    const newScrollPosition = scrollPosition + scrollAmount;
+    setScrollPosition(newScrollPosition);
+
+    newsContainer!.current!.scrollLeft = newScrollPosition;
+
+    // setMoveCounter(moveCounter + 1);
+    // console.log(moveCounter);
+    // if (!moveRight) {
+    //   setMoveRight(true);
+    // }
+  };
+
+  // const moveRightClass = moveRight ? styles.moveright : "";
+
   return (
     <>
       <Header />
@@ -89,6 +119,51 @@ const Home = () => {
                     conviviale.
                   </p>
                 </div>
+              </div>
+            </section>
+          </article>
+          <article className={styles.intro_article}>
+            <section>
+              <h2 className={styles.section_title}>Notre actualité</h2>
+
+              <div className={styles.news_wrapper}>
+                <div
+                  className={`${styles.newscard_container}`}
+                  ref={newsContainer}
+                  id="newsContainer"
+                >
+                  {articles.map((item) => {
+                    return <NewsCard article={item} key={item.id}></NewsCard>;
+                  })}
+
+                  {/* <NewsCard></NewsCard>
+                  <NewsCard></NewsCard>
+                  <NewsCard></NewsCard> */}
+                </div>
+                {/* <div className={styles.news_buttonscontainer}>
+                  <button
+                    onClick={() => handleScroll(-NEWS_WIDTH)}
+                    className={styles.news_buttonleft}
+                  >
+                    <Image
+                      src={buttonArrow}
+                      width={48}
+                      height={48}
+                      alt="Défiler les articles vers la gauche"
+                    ></Image>
+                  </button>
+                  <button
+                    onClick={() => handleScroll(NEWS_WIDTH)}
+                    className={styles.news_buttonright}
+                  >
+                    <Image
+                      src={buttonArrow}
+                      width={48}
+                      height={48}
+                      alt="Défiler les articles vers la droite"
+                    ></Image>
+                  </button>
+                </div> */}
               </div>
             </section>
           </article>
