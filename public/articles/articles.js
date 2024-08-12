@@ -6,6 +6,7 @@ const articles = [
     textFull: "",
     image: "/images/contact.webp",
     altIMage:"",
+    creditsImage:"",
   },
   {id: 2,
     title: "Deux médailles olympiques pour le Taekwondo Français !",
@@ -14,6 +15,7 @@ const articles = [
     textFull: "",
     image: "/images/infos.webp",
     altIMage:"",
+    creditsImage:"",
     },
   {id: 1,
     title: "Lancement de notre site internet !",
@@ -22,6 +24,7 @@ const articles = [
     textFull: "Nous avons le plaisir de vous annoncer le lancement officiel de notre site internet dédié à notre club de Taekwondo ! Ce nouvel espace en ligne a été conçu pour vous offrir une expérience complète et immersive dans le monde du Taekwondo. Vous y trouverez toutes les informations essentielles concernant notre club : nos valeurs, nos instructeurs, les horaires des cours, les niveaux de pratique, ainsi que les modalités d'inscription. Que vous soyez un débutant curieux ou un pratiquant confirmé, notre site est une véritable mine d'informations pour découvrir ou approfondir vos connaissances sur ce sport martial dynamique et exigeant. Vous pourrez également y suivre les actualités du club, nos événements, compétitions et stages, afin de ne rien manquer de la vie de notre communauté. Nous vous invitons à explorer notre site et à nous rejoindre pour partager ensemble la passion du Taekwondo. À très bientôt sur les tatamis !",
     image: "/images/contact.webp",
     altIMage:"",
+    creditsImage:"",
   },
 ]
 
