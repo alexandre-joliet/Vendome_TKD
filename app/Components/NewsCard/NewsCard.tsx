@@ -13,7 +13,7 @@ const NewsCard = ({ article }: ArticleProps) => {
   return (
     <>
       <div className={styles.news_container}>
-        <Link href="" className={styles.news_link}>
+        <Link href={`/articles/${article.id}`} className={styles.news_link}>
           <Image
             src={article.image}
             fill
@@ -22,12 +22,15 @@ const NewsCard = ({ article }: ArticleProps) => {
           ></Image>
         </Link>
         <div className={styles.news_contentwrapper}>
-          <Link href="" className={styles.news_linktitle}>
+          <Link
+            href={`/articles/${article.id}`}
+            className={styles.news_linktitle}
+          >
             <h3 className={styles.news_title}>{article.title}</h3>
           </Link>
           <p className={styles.news_date}>{article.date}</p>
           <p className={styles.news_text}>{article.textCard}</p>
-          <Link href="" className={styles.news_link}>
+          <Link href={`/articles/${article.id}`} className={styles.news_link}>
             Continuer la lecture
           </Link>
         </div>
