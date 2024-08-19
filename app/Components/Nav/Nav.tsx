@@ -41,6 +41,11 @@ const Nav = () => {
               </Link>
             </li>
             <li>
+              <Link href="/articles" className={styles.nav_items}>
+                Actualités
+              </Link>
+            </li>
+            <li>
               <Link href="/le-club" className={styles.nav_items}>
                 Découvrir le club
               </Link>
