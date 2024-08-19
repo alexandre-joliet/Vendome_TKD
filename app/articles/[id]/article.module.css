@@ -1,0 +1,164 @@
+.main_image,
+.section_title,
+.section_text,
+.figure_left {
+  margin-bottom: var(--margin-bottom-small);
+}
+
+.main_header {
+  background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.8)),
+    url("../../../public/images/news.webp");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: var(--margin-bottom-large);
+  height: 15rem;
+  position: relative;
+}
+
+.main_title {
+  color: white;
+  font-size: var(--40px);
+  font-weight: 300;
+  text-shadow: 2px 2px 20px rgb(20, 26, 51, 0.3);
+  margin-bottom: var(--margin-bottom-small);
+  padding: 0 var(--24px) 0 var(--24px);
+  position: absolute;
+  bottom: 0;
+}
+
+.article_section {
+  line-height: 1.75;
+  margin: 0 auto var(--margin-bottom-large) auto;
+  padding: 0 var(--24px) 0 var(--24px);
+  display: flow-root;
+  max-width: var(--max-width-content);
+}
+
+.section_title {
+  font-weight: 900;
+}
+
+.section_subcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin-bottom-small);
+  margin-bottom: var(--margin-bottom-small);
+}
+
+.section_highlight {
+  border-left: 4px solid var(--light-highlight-color);
+  padding-left: var(--16px);
+}
+
+.section_image {
+  border-radius: var(--border-radius);
+  margin: auto;
+}
+
+.img_caption {
+  color: var(--light-dark-variation-text);
+  font-size: 12px;
+  margin-bottom: var(--16px);
+  text-align: center;
+}
+
+.section_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 var(--16px);
+  width: 100%;
+}
+
+.section_list li {
+  list-style-type: none;
+}
+
+.section_listitem {
+  text-align: center;
+}
+
+.section_listitemcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--16px);
+  margin-top: var(--16px);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.newscard_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--32px);
+  padding: 0 1rem 2rem 1rem;
+  transition: all ease-in-out 300ms;
+}
+
+/** MEDIA QUERIES **/
+@media all and (max-width: 550px) {
+  .section_list {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--32px);
+  }
+}
+
+@media all and (min-width: 376px) and (max-width: 767px) {
+  .main_title {
+    font-size: 3rem;
+  }
+
+  .section_listitem {
+    width: 45%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .main_title,
+  .article_section {
+    padding: 0 var(--48px) 0 var(--48px);
+  }
+
+  .main_title {
+    font-size: 4rem;
+  }
+
+  .section_title {
+    font-size: var(--24px);
+    font-weight: 900;
+  }
+
+  .section_listitem {
+    width: 45%;
+  }
+
+  .figure_left,
+  .figure_right,
+  .figure_center {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .main_title {
+    font-size: 5rem;
+  }
+
+  .main_header {
+    height: 25rem;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .main_title,
+  .article_section {
+    padding: 0 var(--64px) 0 var(--64px);
+  }
+
+  .article_section:not(:first-child) {
+    margin-bottom: var(--64px);
+  }
+}
