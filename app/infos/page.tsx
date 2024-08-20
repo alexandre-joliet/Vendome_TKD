@@ -143,7 +143,7 @@ const Infos = () => {
                       alt=""
                       aria-hidden="true"
                     />
-                    Mardis et jeudis 19h05 - 20h30
+                    Mardis et jeudis 19h05 - 20h45
                   </p>
                 </div>
                 <div className={styles.card_extras}>
