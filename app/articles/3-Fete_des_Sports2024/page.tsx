@@ -17,43 +17,40 @@ const Article = () => {
             <Image
               src="/images/articles/3-Fete_des_Sports2024/VendomeCover.webp"
               //
-              width={1110}
+              width={1072}
               height={500}
-              alt=""
+              alt="Une vue aérienne des toits de la ville de Vendôme. On peut y voir les clochers des édifices religieux de la ville et la Mairie et son parc"
               className={styles.section_coverimage}
             ></Image>
             <figcaption className={styles.img_caption}>
-              Crédits - Unsplash
+              Crédits - Ville de Vendôme
             </figcaption>
           </figure>
           <section className={styles.article_section}>
             <h2 className={styles.section_title}>
-              Deux médailles olympiques pour le Taekwondo Français !
+              Retrouvez-nous au Forum des Associations de Vendôme !{" "}
             </h2>
-            <p className={styles.section_date}>10/08/2024</p>
+            <p className={styles.section_date}>19/08/2024</p>
             <p className={styles.section_text}>
-              Nous avons le plaisir de vous annoncer le lancement officiel de
-              notre site internet dédié à notre club de Taekwondo !
+              Comme tous les ans, aura lieu le samedi{" "}
+              <strong>07 Septembre 2024</strong> la Fête des Sports et la
+              Journée des Associations de notre belle ville de Vendôme.
+              L'occasion de découvrir toutes les associations sportives et
+              culturelles présentes dans la ville et de pouvoir directement
+              échanger avec elles.
             </p>
             <p className={styles.section_text}>
-              Vous y trouverez toutes les informations essentielles concernant
-              notre club : nos valeurs, nos instructeurs, les horaires des
-              cours, les informations pratiques, ainsi que les modalités
-              d'inscription.
+              C'est au coeur du Parc Ronsard que vous pourrez donc retrouver le
+              stand du Club, où notre Maître et des adhérents vous accueilleront
+              toute la journée et pourront répondre à toutes vos questions.
             </p>
             <p className={styles.section_text}>
-              Que vous soyez un débutant curieux ou un pratiquant confirmé,
-              notre site est une véritable mine d'informations pour découvrir ou
-              approfondir vos connaissances sur ce sport martial dynamique et
-              exigeant. Vous pourrez également y suivre les actualités du club,
-              nos événements, compétitions et stages, afin de ne rien manquer de
-              la vie de notre communauté. Nous vous invitons à explorer notre
-              site et à nous rejoindre pour partager ensemble la passion du
-              Taekwondo.
+              Pour les plus courageux, il sera également possible de participer
+              à des démonstrations en notre compagnie, pour que vous puissiez
+              découvrir quelques facettes de ce sport en pratiquant directement
+              avec nous !
             </p>
-            <p className={styles.section_text}>
-              À très bientôt sur les tatamis !
-            </p>
+            <p className={styles.section_text}>On vous attend nombreux !</p>
           </section>
         </article>
       </main>

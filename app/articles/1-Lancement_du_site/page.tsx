@@ -43,13 +43,12 @@ const Article = () => {
             </p>
             <p className={styles.section_text}>
               Que vous soyez un débutant curieux ou un pratiquant confirmé,
-              notre site est une véritable mine d'informations pour découvrir ou
-              approfondir vos connaissances sur ce sport martial dynamique et
-              exigeant. Vous pourrez également y suivre les actualités du club,
-              nos événements, compétitions et stages, afin de ne rien manquer de
-              la vie de notre communauté. Nous vous invitons à explorer notre
-              site et à nous rejoindre pour partager ensemble la passion du
-              Taekwondo.
+              notre site vous permettra de découvrir ou approfondir vos
+              connaissances sur cet art martial dynamique et exigeant. Vous
+              pourrez également y suivre les actualités du club, nos événements,
+              compétitions et stages, afin de ne rien manquer de la vie de notre
+              communauté. Nous vous invitons à explorer notre site et à nous
+              rejoindre pour partager ensemble la passion du Taekwondo.
             </p>
             <p className={styles.section_text}>
               À très bientôt sur les tatamis !

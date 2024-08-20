@@ -89,7 +89,7 @@ const Article = () => {
               Taekwondo aux après une victoire en repêchage contre le
               Vénézuélien Yohandri Granado. Il a obtenu la médaille pour la
               troisième place sans combattre , son adversaire italien Vito
-              Dell'Aquila ayant déclaré forfait. Ravet s'est dit heureux et
+              Dell'Aquila ayant déclaré forfait. Cyrian s'est dit heureux et
               soulagé, exprimant sa fierté de remporter cette médaille devant
               ses proches.
             </p>
