@@ -41,7 +41,7 @@
   }
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1080px) {
   .header {
     background-color: var(--light-darkest-variation-title);
     justify-content: space-between;
