@@ -13,24 +13,24 @@ const NewsCard = ({ article }: ArticleProps) => {
   return (
     <>
       <div className={styles.news_container}>
-        <Link href={`/articles/${article.id}`} className={styles.news_link}>
+        <Link href={`/articles/${article.url}`} className={styles.news_link}>
           <Image
             src={article.image}
             fill
-            alt="Logo de la FFTDA"
+            alt={article.altIMage}
             className={styles.news_image}
           ></Image>
         </Link>
         <div className={styles.news_contentwrapper}>
           <Link
-            href={`/articles/${article.id}`}
+            href={`/articles/${article.url}`}
             className={styles.news_linktitle}
           >
             <h3 className={styles.news_title}>{article.title}</h3>
           </Link>
           <p className={styles.news_date}>{article.date}</p>
           <p className={styles.news_text}>{article.textCard}</p>
-          <Link href={`/articles/${article.id}`} className={styles.news_link}>
+          <Link href={`/articles/${article.url}`} className={styles.news_link}>
             Continuer la lecture
           </Link>
         </div>
