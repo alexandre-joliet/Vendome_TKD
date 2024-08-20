@@ -15,11 +15,11 @@ const Article = () => {
         <article className={styles.main_article}>
           <figure className={styles.section_coverimagecontainer}>
             <Image
-              src="/images/articles/1-Lancement_du_site/contact.webp"
+              src="/images/articles/3-Fete_des_Sports2024/VendomeCover.webp"
               //
-              width={1072}
+              width={1110}
               height={500}
-              alt="Un homme utilisant son smartphone face à son ordinateur portable"
+              alt=""
               className={styles.section_coverimage}
             ></Image>
             <figcaption className={styles.img_caption}>
@@ -28,9 +28,9 @@ const Article = () => {
           </figure>
           <section className={styles.article_section}>
             <h2 className={styles.section_title}>
-              Lancement de notre site internet !
+              Deux médailles olympiques pour le Taekwondo Français !
             </h2>
-            <p className={styles.section_date}>01/08/2024</p>
+            <p className={styles.section_date}>10/08/2024</p>
             <p className={styles.section_text}>
               Nous avons le plaisir de vous annoncer le lancement officiel de
               notre site internet dédié à notre club de Taekwondo !
