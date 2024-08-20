@@ -39,7 +39,8 @@
 }
 
 .section_coverimagecontainer {
-  margin: 0 auto var(--margin-bottom-small) auto;
+  margin: 0 var(--margin-bottom-small);
+  max-width: var(--max-width-content);
 }
 
 .section_coverimage,
@@ -118,6 +119,10 @@
 
   .main_title {
     font-size: 4rem;
+  }
+
+  .section_coverimagecontainer {
+    margin: 0 auto var(--margin-bottom-small) auto;
   }
 
   .section_title {
