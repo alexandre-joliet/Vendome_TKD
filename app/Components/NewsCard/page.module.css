@@ -28,7 +28,7 @@
 }
 
 .news_date {
-  color: #878787;
+  color: var(--light-faded-text);
   font-size: var(--12px);
 }
 
