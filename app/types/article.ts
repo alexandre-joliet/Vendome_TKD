@@ -7,4 +7,5 @@ export type ArticleType = {
     image: string;
     altIMage: string;
     creditsImage: string;
+    url: string;
 }
