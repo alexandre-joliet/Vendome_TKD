@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./page.module.css";
 
 const Footer = () => {
@@ -8,6 +9,9 @@ const Footer = () => {
         <p className={styles.infos_address}>
           6 Rue Geoffroy Martel, 41100 Vendôme
         </p>
+        <Link href="/mentions-legales" className={styles.infos_mentions}>
+          Mentions Légales
+        </Link>
       </div>
       <a
         href="https://www.facebook.com/groups/2491193871168095?locale=fr_FR"

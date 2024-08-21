@@ -17,12 +17,15 @@
 .infos_title {
   font-size: var(--18px);
   font-weight: 700;
-  margin-bottom: var(--16px);
 }
 
 .infos_title,
 .infos_address {
   color: white;
+}
+
+.infos_address {
+  margin-bottom: var(--16px);
 }
 
 .social_fb {
