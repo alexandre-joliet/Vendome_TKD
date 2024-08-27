@@ -8,6 +8,7 @@
   box-shadow: 2px 2px 20px 1px rgba(212, 212, 212, 0.5);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 8rem var(--24px);
   max-width: 80%;
   height: 100vh;
