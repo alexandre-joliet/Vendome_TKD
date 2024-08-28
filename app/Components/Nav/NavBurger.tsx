@@ -54,11 +54,11 @@ const NavBurger = ({ menuIsOpen, onClickMenu }: Props) => {
               Actualités
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/le-club" className={styles.nav_items}>
               Découvrir le club
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/infos" className={styles.nav_items}>
               Informations pratiques
