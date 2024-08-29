@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Vendôme Taekwondo Club",
+  title: "Vendôme Taekwondo Club - Le club de Taekwondo de la ville de Vendôme",
   description:
-    "Bienvenue au Taekwondo Club de Vendôme (41) ! Notre club offre un environnement dynamique et inclusif pour les pratiquants de tous âges et de tous niveaux. Que vous soyez un débutant curieux ou un expert chevronné, tout est mis en oeuvre pour vous guider à travers chaque étape de votre apprentissage de ce noble art martial coréen.",
+    "Bienvenue au Taekwondo Club de Vendôme (41) ! Notre club offre un environnement dynamique et inclusif pour les pratiquants de tous âges et de tous niveaux. Que vous soyez un débutant curieux ou un expert chevronné de Taekwondo, tout est mis en oeuvre pour vous guider à travers chaque étape de votre apprentissage de ce noble art martial coréen.",
 };
 
 export default function RootLayout({
