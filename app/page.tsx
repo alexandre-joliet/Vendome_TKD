@@ -118,14 +118,14 @@ const Home = () => {
 
         <div className={styles.bg_wrapper}>
           <div className={styles.cards_container}>
-            {/* <CardHome
+            <CardHome
               CardProps={{
                 image: "/images/AICover2.jpeg",
                 alt: "alt",
                 title: "S'informer sur le club",
                 url: "/le-club",
               }}
-            /> */}
+            />
             <CardHome
               CardProps={{
                 image: "/images/infos.webp",
