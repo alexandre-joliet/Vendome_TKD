@@ -32,7 +32,7 @@ const Article = () => {
             </h2>
             <p className={styles.section_date}>19/08/2024</p>
             <p className={styles.section_text}>
-              Evênement incounrtnable de la rentrée pour les Vendomois, la Fête
+              Evênement incontournable de la rentrée pour les Vendomois, la Fête
               des Sports et la Journée des Associations se tiendra cette année
               le samedi <strong>07 Septembre 2024</strong>. L'occasion de
               découvrir toutes les associations sportives et culturelles
