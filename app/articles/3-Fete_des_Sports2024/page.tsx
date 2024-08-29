@@ -32,12 +32,12 @@ const Article = () => {
             </h2>
             <p className={styles.section_date}>19/08/2024</p>
             <p className={styles.section_text}>
-              Comme tous les ans, aura lieu le samedi{" "}
-              <strong>07 Septembre 2024</strong> la Fête des Sports et la
-              Journée des Associations de notre belle ville de Vendôme.
-              L'occasion de découvrir toutes les associations sportives et
-              culturelles présentes dans la ville et de pouvoir directement
-              échanger avec elles.
+              Evênement incounrtnable de la rentrée pour les Vendomois, la Fête
+              des Sports et la Journée des Associations se tiendra cette année
+              le samedi <strong>07 Septembre 2024</strong>. L'occasion de
+              découvrir toutes les associations sportives et culturelles
+              présentes dans la ville et de pouvoir directement échanger avec
+              elles.
             </p>
             <p className={styles.section_text}>
               C'est au coeur du Parc Ronsard que vous pourrez donc retrouver le
