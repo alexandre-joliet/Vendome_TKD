@@ -185,7 +185,7 @@ const Infos = () => {
                   <li>2 photos d'identité</li>
                   <li>
                     <a
-                      href="/files/VENDOME TAEKWENDO INSCRIPTION.pdf"
+                      href="/files/Fiche Inscription Vendôme Taekwondo.pdf"
                       target="_blank"
                     >
                       Fiche d'inscription
@@ -230,7 +230,7 @@ const Infos = () => {
                   De plus, nous organisons en début de saison des commandes
                   groupées avec notre fournisseur pour équiper ceux qui le
                   souhaitent tout en bénéficiant de réductions. Si vous êtes
-                  intéressé, n'hésitez pas à nous en parler !
+                  intéressés, n'hésitez pas à nous en parler !
                 </p>
               </div>
             </section>
