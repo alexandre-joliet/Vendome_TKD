@@ -13,43 +13,72 @@ const LeClub = () => {
         <article className={styles.main_article}>
           <section className={styles.article_section}>
             <p className={styles.section_text}>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
-              provident vitae ducimus ipsam est molestias, voluptates, illum
-              sequi quam beatae placeat aliquid, blanditiis animi dignissimos!
-              Est, adipisci modi. Nobis, voluptate? Placeat temporibus vel
-              corrupti!
-            </p>
-            <p className={styles.section_text}>
-              Facere dicta laudantium, magni accusamus architecto, nisi error
-              voluptatum molestiae suscipit enim corporis aspernatur maiores
-              modi laboriosam accusantium, pariatur at aut nam. Vel dolorum
-              beatae rem?
+              Fondé en 2019 par notre professeur <strong>Guy NGUENANG</strong>,
+              le Taekwondo Club de Vendôme compte aujourd'hui une cinquantaine
+              d'adhérents, toutes tranches d'âge et niveaux confondus.
             </p>
           </section>
           <section className={styles.article_section}>
-            <h2 className={styles.section_title}>Notre maître</h2>
+            <h2 className={styles.section_title}>
+              Notre professeur Guy NGUENANG, 3ème Dan
+            </h2>
             <div className={styles.section_container}>
               <img
-                src="/images/prof.jpg"
-                alt="Portait de Guy, en dobok dans notre dojo"
+                src="/images/le-club/guy/Guy-buste.webp"
+                alt="Portait de Guy, vêtu du dobok blanc à col noir, tenue traditionnelle portée par les pratiquants gradés de Taekwondo"
                 className={styles.section_image}
               />
               <p className={styles.section_text}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
-                provident vitae ducimus ipsam est molestias, voluptates, illum
-                sequi quam beatae placeat aliquid, blanditiis animi dignissimos!
-                Est, adipisci modi. Nobis, voluptate? Placeat temporibus vel
-                corrupti! Facere dicta laudantium, magni accusamus architecto,
-                nisi error voluptatum molestiae suscipit enim corporis
-                aspernatur maiores modi laboriosam accusantium, pariatur at aut
-                nam. Vel dolorum beatae rem?
+                "Passionné de sport depuis le plus jeune âge, j'ai découvert les
+                arts martiaux à l'âge de 10 ans et commencé la pratique du
+                Taekwondo trois ans plus tard au YUC Boom So Taekwondo au
+                Cameroun. C’est là, sous l’enseignement de Maître Fabrice
+                MAICKA, que m'ont été transmises les valeurs les plus pures du
+                Taekwondo et que mon amour de ce sport est né.
               </p>
               <p className={styles.section_text}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
-                provident vitae ducimus ipsam est molestias, voluptates, illum
-                sequi quam beatae placeat aliquid, blanditiis animi dignissimos!
-                Est, adipisci modi. Nobis, voluptate? Placeat temporibus vel
-                corrupti!
+                Après avoir participé à quelques tournois, aussi bien nationaux
+                qu'internationaux, j’ai vite compris que ma véritable vocation
+                était de transmettre ce que j'avais appris. C'est donc tout
+                naturellement que j'ai décidé de me tourner vers l'enseignement
+                de cet art martial en y dédiant une part majeure de mon temps.
+                Fort de mes années d'expérience accumulées à travers une
+                pratique assidue, je partage au plus grand nombre cette passion
+                qui m’anime depuis si longtemps, tout en faisant découvrir
+                l’esprit du Taekwondo.
+              </p>
+              <p className={styles.section_text}>
+                C'est un véritable honneur pour moi aujourd'hui de pouvoir
+                transmettre les valeurs de ce sport qui m'ont tant apporté et
+                d’accompagner tous les pratiquants et pratiquantes dans leur
+                développement tant physique que martial.
+              </p>
+              <h3 className={styles.section_subtitle}>
+                Une approche mélant traditionel et modernisme
+              </h3>
+              <p className={styles.section_text}>
+                Spécialisé dans la pratique traditionnelle, mes programmes sont
+                conçus pour répondre à vos besoins en matière de sport et de
+                bien-être, que vous soyez débutant(e) ou athlète chevronné(e).
+                En plus de mon enseignement traditionnel, j'intègre également
+                une approche moderne à la pratique. Cette polyvalence stimule ma
+                créativité en tant qu'enseignant et me permet de rester
+                pleinement connecté à la fois aux aspects traditionnels et
+                modernes de la discipline.
+              </p>
+              <h3 className={styles.section_subtitle}>
+                Mes engagements en tant que professeur
+              </h3>
+              <p className={styles.section_text}>
+                Je m'engage à vous accompagner dans l'atteinte de vos objectifs
+                sport-santé, tels que : renforcer votre confiance en vous,
+                développer vos compétences techniques en Taekwondo, stimuler et
+                augmenter votre endurance, améliorer votre respiration,
+                développer votre explosivité, préparer votre corps à la
+                résistance, progresser et, surtout, vous surpasser !"
+              </p>
+              <p className={styles.section_textclosure}>
+                감사합니다 <br />(<i>"Kamsa Hamnida"</i> - Merci en coréen)
               </p>
             </div>
           </section>
