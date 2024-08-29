@@ -9,7 +9,7 @@ type ArticleProps = {
 };
 
 const NewsCard = ({ article }: ArticleProps) => {
-  console.log(article);
+  // console.log(article);
   return (
     <>
       <div className={styles.news_container}>
