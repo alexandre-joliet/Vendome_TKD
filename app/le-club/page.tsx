@@ -54,7 +54,7 @@ const LeClub = () => {
                 développement tant physique que martial.
               </p>
               <h3 className={styles.section_subtitle}>
-                Une approche mélant traditionel et modernisme
+                Une approche mêlant traditionnel et modernisme
               </h3>
               <p className={styles.section_text}>
                 Spécialisé dans la pratique traditionnelle, mes programmes sont
