@@ -26,13 +26,15 @@ const Home = () => {
             <p className={styles.intro_text}>
               Situé au cœur de la ville de Vendôme, dans le département du
               Loir-et-Cher (41), notre club de Taekwondo offre un environnement
-              dynamique pour tous les pratiquants. Peu importe votre niveau,
-              tout est mis en oeuvre pour vous guider à travers chaque étape de
-              votre voyage dans ce noble art martial coréen.
+              dynamique pour tous les pratiquants. Que vous soyez un expert
+              chevronné ou un débutant dans le monde des arts martiaux ou des
+              sports de combat, tout est mis en oeuvre pour vous guider à
+              travers chaque étape de votre voyage dans ce noble art martial
+              coréen.
             </p>
             <p className={styles.intro_text}>
               Que vous cherchiez à améliorer votre forme physique, à acquérir
-              des compétences d'autodéfense ou à vous immerger dans la riche
+              des compétences de self-défense ou à vous immerger dans la riche
               culture du Taekwondo, vous trouverez tout cela et bien plus encore
               parmi nous.
             </p>
@@ -77,7 +79,7 @@ const Home = () => {
                   <p className={styles.value_title}>Persévérance</p>
                   <p className={styles.value_text}>
                     Nos cours sont conçus pour favoriser le développement
-                    personnel, physique et mental de nos membres, les aidant
+                    personnel, physique et mental de nos licenciés, les aidant
                     ainsi à atteindre leurs objectifs et à se dépasser.
                   </p>
                 </div>
