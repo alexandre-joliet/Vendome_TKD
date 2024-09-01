@@ -20,7 +20,7 @@ const LeClub = () => {
           </section>
           <section className={styles.article_section}>
             <h2 className={styles.section_title}>
-              Notre professeur Guy NGUENANG, 3ème Dan
+              Notre professeur, Guy NGUENANG
             </h2>
             <div className={styles.section_container}>
               <img

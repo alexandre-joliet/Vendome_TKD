@@ -28,21 +28,21 @@ const Article = () => {
           </figure>
           <section className={styles.article_section}>
             <h2 className={styles.section_title}>
-              Retrouvez-nous au Forum des Associations de Vendôme !{" "}
+              Retrouvez-nous à la Fête des Associations de Vendôme !{" "}
             </h2>
             <p className={styles.section_date}>19/08/2024</p>
             <p className={styles.section_text}>
-              Evênement incontournable de la rentrée pour les Vendomois, la Fête
-              des Sports et la Journée des Associations se tiendra cette année
-              le samedi <strong>07 Septembre 2024</strong>. L'occasion de
-              découvrir toutes les associations sportives et culturelles
-              présentes dans la ville et de pouvoir directement échanger avec
-              elles.
+              Evènement incontournable de la rentrée pour les Vendomois, la Fête
+              des Sports et des Associations se tiendra cette année le samedi{" "}
+              <strong>07 Septembre 2024</strong>. L'occasion de découvrir toutes
+              les associations sportives et culturelles présentes dans la ville
+              et de pouvoir directement échanger avec elles.
             </p>
             <p className={styles.section_text}>
               C'est au coeur du Parc Ronsard que vous pourrez donc retrouver le
-              stand du Club, où notre Maître et des adhérents vous accueilleront
-              toute la journée et pourront répondre à toutes vos questions.
+              stand du Club, où notre Professeur et des adhérents vous
+              accueilleront toute la journée et pourront répondre à toutes vos
+              questions.
             </p>
             <p className={styles.section_text}>
               Pour les plus courageux, il sera également possible de participer

@@ -1,8 +1,8 @@
 const articles = [
   {id: 3,
-    title: "Retrouvez-nous au Forum des Associations de Vendôme !",
+    title: "Retrouvez-nous à la Fête des Associations de Vendôme !",
     date:"15/08/2024",
-    textCard: "Le samedi 07/09/2024, venez nous rencontrer au Parc Ronsard de Vendôme lors de la Fête du Sport et de la Journée des Associations. Ce sera l'occasion de rencontrer les adhérents, de poser toutes vos questions et de participer à des démonstrations !",
+    textCard: "Le samedi 07/09/2024, venez nous rencontrer au Parc Ronsard de Vendôme lors de la Fête du Sport et des Associations. Ce sera l'occasion de rencontrer les adhérents, de poser toutes vos questions et de participer à des démonstrations !",
     textFull: "",
     image: "/images/articles/3-Fete_des_Sports2024/VendomeCover.webp",
     altIMage:"",
