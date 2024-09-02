@@ -24,7 +24,7 @@ const LeClub = () => {
             </h2>
             <div className={styles.section_container}>
               <img
-                src="/images/le-club/guy/Guy-buste.webp"
+                src="/images/le-club/guy/Guy-buste-black.webp"
                 alt="Portait de Guy, vêtu du dobok blanc à col noir, tenue traditionnelle portée par les pratiquants gradés de Taekwondo"
                 className={styles.section_image}
               />
