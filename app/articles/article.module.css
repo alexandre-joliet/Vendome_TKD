@@ -70,7 +70,8 @@
 }
 
 .section_date,
-.img_caption {
+.img_caption,
+.img_captioncover {
   color: var(--light-faded-text);
 }
 
@@ -86,12 +87,20 @@
   padding-left: var(--16px);
 }
 
-.img_caption {
+.img_caption,
+.img_captioncover {
   font-size: var(--10px);
   margin-bottom: var(--16px);
-  padding-right: var(--10px);
   text-align: right;
   max-width: var(--max-width-content);
+}
+
+.img_caption {
+  padding-right: var(--10px);
+}
+
+.img_captioncover {
+  padding-right: var(--28px);
 }
 
 .newscard_container {

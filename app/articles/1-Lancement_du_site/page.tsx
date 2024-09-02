@@ -22,7 +22,7 @@ const Article = () => {
               alt="Un homme utilisant son smartphone face à son ordinateur portable"
               className={styles.section_coverimage}
             ></Image>
-            <figcaption className={styles.img_caption}>
+            <figcaption className={styles.img_captioncover}>
               Crédits - Unsplash
             </figcaption>
           </figure>

@@ -22,7 +22,7 @@ const Article = () => {
               alt="Photographie de la façade du Grand Palais à Paris, décorée aux couleurs des Jeux Olympiques de Paris 2024"
               className={styles.section_coverimage}
             ></Image>
-            <figcaption className={styles.img_caption}>
+            <figcaption className={styles.img_captioncover}>
               Crédits - Paris 2024
             </figcaption>
           </figure>

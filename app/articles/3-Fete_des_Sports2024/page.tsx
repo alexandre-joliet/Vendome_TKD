@@ -22,13 +22,13 @@ const Article = () => {
               alt="Une vue aérienne des toits de la ville de Vendôme. On peut y voir les clochers des édifices religieux de la ville et la Mairie et son parc"
               className={styles.section_coverimage}
             ></Image>
-            <figcaption className={styles.img_caption}>
+            <figcaption className={styles.img_captioncover}>
               Crédits - Ville de Vendôme
             </figcaption>
           </figure>
           <section className={styles.article_section}>
             <h2 className={styles.section_title}>
-              Retrouvez-nous à la Fête des Associations de Vendôme !{" "}
+              Retrouvez-nous à la Fête du Sport de Vendôme !{" "}
             </h2>
             <p className={styles.section_date}>19/08/2024</p>
             <p className={styles.section_text}>
