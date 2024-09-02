@@ -92,15 +92,8 @@
   font-size: var(--10px);
   margin-bottom: var(--16px);
   text-align: right;
-  max-width: var(--max-width-content);
-}
-
-.img_caption {
   padding-right: var(--10px);
-}
-
-.img_captioncover {
-  padding-right: var(--28px);
+  max-width: var(--max-width-content);
 }
 
 .newscard_container {
@@ -158,6 +151,10 @@
 
   .main_header {
     height: 25rem;
+  }
+
+  .img_captioncover {
+    padding-right: var(--28px);
   }
 
   .section_image {
