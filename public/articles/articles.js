@@ -2,7 +2,7 @@ const articles = [
   {id: 4,
     title: "De l'argent pour Djelika Diallo en Para-Taekwondo !",
     date:"02/09/2024",
-    textCard: "Au terme d'une journée de folie, Djelika DIALLO a décroché une magnifique médaille d'argent lors des Jeux Paralympiques de Paris 2024 ! Malgré la défaite, son parcours est impressionnant, compte tenu de sa courte carrière.",
+    textCard: "Au terme d'une journée de folie, Djelika Diallo a décroché une magnifique médaille d'argent lors des Jeux Paralympiques de Paris 2024 ! Malgré la défaite, son parcours est impressionnant, compte tenu de sa courte carrière.",
     textFull: "",
     image: "/images/articles/4-JOPARA2024/JOPARA2024-Djelika.avif",
     altIMage:"",
