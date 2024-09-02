@@ -1,6 +1,17 @@
 const articles = [
+  {id: 4,
+    title: "De l'argent pour Djelika Diallo en Para-Taekwondo !",
+    date:"02/09/2024",
+    textCard: "Au terme d'une journée de folie, Djelika DIALLO a décroché une magnifique médaille d'argent lors des Jeux Paralympiques de Paris 2024 ! Malgré la défaite, son parcours est impressionnant, compte tenu de sa courte carrière.",
+    textFull: "",
+    image: "/images/articles/4-JOPARA2024/JOPARA2024-Djelika.avif",
+    altIMage:"",
+    creditsImage:"Crédits - Elsa/Getty Images",
+    url:"/4-JOPARA2024",
+
+  },
   {id: 3,
-    title: "Retrouvez-nous à la Fête des Associations de Vendôme !",
+    title: "Retrouvez-nous à la Fête du Sport de Vendôme !",
     date:"15/08/2024",
     textCard: "Le samedi 07/09/2024, venez nous rencontrer au Parc Ronsard de Vendôme lors de la Fête du Sport et des Associations. Ce sera l'occasion de rencontrer les adhérents, de poser toutes vos questions et de participer à des démonstrations !",
     textFull: "",
