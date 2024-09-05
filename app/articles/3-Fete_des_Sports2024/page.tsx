@@ -39,10 +39,10 @@ const Article = () => {
               et de pouvoir directement échanger avec elles.
             </p>
             <p className={styles.section_text}>
-              C'est au coeur du Parc Ronsard que vous pourrez donc retrouver le
-              stand du Club, où notre Professeur et des adhérents vous
-              accueilleront toute la journée et pourront répondre à toutes vos
-              questions.
+              C'est <strong>sur le stand 29</strong>, au coeur du Parc Ronsard
+              que vous pourrez donc nous retrouver, où notre Professeur et des
+              adhérents vous accueilleront toute la journée et pourront répondre
+              à toutes vos questions.
             </p>
             <p className={styles.section_text}>
               Pour les plus courageux, il sera également possible de participer
@@ -51,6 +51,27 @@ const Article = () => {
               avec nous !
             </p>
             <p className={styles.section_text}>On vous attend nombreux !</p>
+          </section>
+          <section className={styles.article_section}>
+            <figure className={styles.section_imagecontainer}>
+              <Image
+                src="/images/articles/3-Fete_des_Sports2024/PLANFDS.jpg"
+                //
+                width={1072}
+                height={500}
+                alt="Plan des stands la Fête des Sports de Vendôme"
+                className={styles.section_image}
+              ></Image>
+            </figure>
+            <button className={styles.download_button}>
+              {" "}
+              <a
+                href="/images/articles/3-Fete_des_Sports2024/PLANFDS.jpg"
+                download="Plan Fête des Sports - Taekwnondo"
+              >
+                Télécharger le plan
+              </a>
+            </button>
           </section>
         </article>
       </main>
