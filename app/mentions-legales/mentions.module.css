@@ -6,10 +6,11 @@
 }
 
 .main_header {
-  background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.8)),
+  /* background-image: linear-gradient(rgba(70, 130, 180, 0), rgb(20, 26, 51, 0.8)),
     url("../../public/images/news.webp");
   background-size: cover;
-  background-position: center;
+  background-position: center; */
+  background-color: var(--light-darkest-variation-title);
   margin-bottom: var(--margin-bottom-large);
   height: 15rem;
   position: relative;
