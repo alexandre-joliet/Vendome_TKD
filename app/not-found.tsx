@@ -13,7 +13,7 @@ const NotFound = () => {
         <article className={styles.main_article}>
           <section className={styles.article_section404}>
             <p className={styles.section_subtitle}>
-              La page demandée n'a pas été trouvée.
+              La page demandée n'éxiste pas.
             </p>
           </section>
         </article>
