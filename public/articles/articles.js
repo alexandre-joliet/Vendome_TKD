@@ -18,9 +18,11 @@ const articles = [
         textCard:
             "Au terme d'une journée de folie, Djelika Diallo a décroché une magnifique médaille d'argent lors des Jeux Paralympiques de Paris 2024 ! Malgré la défaite, son parcours est impressionnant, compte tenu de sa courte carrière.",
         textFull: "",
-        image: "/images/articles/4-JOPARA2024/JOPARA2024-Djelika.avif",
+        // image: "/images/articles/4-JOPARA2024/JOPARA2024-Djelika.avif",
+        image: "",
         altIMage: "",
-        creditsImage: "Crédits - Elsa/Getty Images",
+        // creditsImage: "Crédits - Elsa/Getty Images",
+        creditsImage: "",
         url: "4-JOPARA2024",
     },
     {
@@ -42,10 +44,12 @@ const articles = [
         textCard:
             "Aux Jeux Olympiques de Paris 2024, Cyrian Ravet décroche le bronze en -58kg, tandis qu'Althéa Laurin remporte l'or en +67kg. Ces deux médailles couronnent leur détermination  et font briller le Taekwondo tricolore sur la scène mondiale.",
         textFull: "",
-        image: "/images/articles/2-JO2024/JO2024-Laurin.webp",
-        altIMage:
-            "L'athlète Française Althéa Laurin brandissant le drapeau français dans son dos et éclatante de joie après sa victoire en finale des JO de Paris 2024",
-        creditsImage: "Crédits - Buda Mendes",
+        image: "",
+        // altIMage:
+        //     "L'athlète Française Althéa Laurin brandissant le drapeau français dans son dos et éclatante de joie après sa victoire en finale des JO de Paris 2024",
+        altIMage: "",
+        // creditsImage: "Crédits - Buda Mendes",
+        creditsImage: "",
         url: "2-JO2024",
     },
     {
