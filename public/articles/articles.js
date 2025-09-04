@@ -1,5 +1,17 @@
 const articles = [
     {
+        id: 6,
+        title: "Retrouvez-nous à la Fête du Sport de Vendôme !",
+        date: "04/09/2025",
+        textCard:
+            "Le samedi 06/09/2025, venez nous rencontrer au Parc Ronsard de Vendôme lors de la Fête du Sport et des Associations. Ce sera l'occasion de rencontrer les adhérents, de poser toutes vos questions et de participer à des démonstrations !",
+        textFull: "",
+        image: "/images/articles/3-Fete_des_Sports2024/VendomeCover.webp",
+        altIMage: "",
+        creditsImage: "Crédits - ",
+        url: "6-Fete_des_Sports2025",
+    },
+    {
         id: 5,
         title: "Le prochain championnat régional aura lieu à Vendôme",
         date: "11/11/2024",
